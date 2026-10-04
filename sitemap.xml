@@ -1,7 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://yaproll.app/</loc></url>
-  <url><loc>https://yaproll.app/privacy.html</loc></url>
-  <url><loc>https://yaproll.app/terms.html</loc></url>
-  <url><loc>https://yaproll.app/delete-account.html</loc></url>
+  <url><loc>https://yaproll.app/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html"/>
+  </url>
+  <url><loc>https://yaproll.app/community-guidelines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/community-guidelines.html"/>
+  </url>
+  <url><loc>https://yaproll.app/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html"/>
+  </url>
+  <url><loc>https://yaproll.app/child-safety.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/child-safety.html"/>
+  </url>
+  <url><loc>https://yaproll.app/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/delete-account.html"/>
+  </url>
+  <url><loc>https://yaproll.app/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html"/>
+  </url>
+  <url><loc>https://yaproll.app/es/community-guidelines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/community-guidelines.html"/>
+  </url>
+  <url><loc>https://yaproll.app/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html"/>
+  </url>
+  <url><loc>https://yaproll.app/es/child-safety.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/child-safety.html"/>
+  </url>
+  <url><loc>https://yaproll.app/es/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/delete-account.html"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/community-guidelines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/community-guidelines.html"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/child-safety.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/child-safety.html"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/delete-account.html"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/community-guidelines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/community-guidelines.html"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/child-safety.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/child-safety.html"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/delete-account.html"/>
+  </url>
+  <url><loc>https://yaproll.app/de/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html"/>
+  </url>
+  <url><loc>https://yaproll.app/de/community-guidelines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/community-guidelines.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/community-guidelines.html"/>
+  </url>
+  <url><loc>https://yaproll.app/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html"/>
+  </url>
+  <url><loc>https://yaproll.app/de/child-safety.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/child-safety.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/child-safety.html"/>
+  </url>
+  <url><loc>https://yaproll.app/de/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/delete-account.html"/>
+  </url>
 </urlset>
