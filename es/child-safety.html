@@ -16,17 +16,32 @@
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="lockup" href="../index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
+    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
     <nav class="nav" aria-label="Site">
-      <a href="../index.html#how">Cómo funciona</a>
-      <a href="../index.html#safety">Seguridad</a>
+      <a href="index.html#how">Cómo funciona</a>
+      <a href="index.html#safety">Seguridad</a>
       <a class="nav-keep" href="terms.html" aria-current="page">Legal</a>
+      <details class="lang-menu">
+      <summary title="Idioma"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt=""><span class="sr-only">Idioma: Español</span></summary>
+      <nav class="lang-list" aria-label="Idioma">
+        <a href="../child-safety.html" hreflang="en" lang="en"><img class="flag" src="../assets/flags/gb.svg" width="21" height="14" alt="">English</a>
+        <a href="child-safety.html" hreflang="es" lang="es" aria-current="true"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt="">Español</a>
+        <a href="../pt/child-safety.html" hreflang="pt" lang="pt"><img class="flag" src="../assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
+        <a href="../fr/child-safety.html" hreflang="fr" lang="fr"><img class="flag" src="../assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
+        <a href="../de/child-safety.html" hreflang="de" lang="de"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
+      </nav>
+    </details>
+      <button class="theme-toggle" type="button" hidden data-to-light="Cambiar a tema claro" data-to-dark="Cambiar a tema oscuro" aria-label="Cambiar a tema claro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -128,7 +143,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <a class="lockup" href="../index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
+    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
     <nav aria-label="Legal">
       <a href="terms.html">Términos del servicio</a>
       <a href="community-guidelines.html">Normas de la comunidad</a>
@@ -137,6 +152,16 @@
       <a href="delete-account.html">Eliminar tu cuenta</a>
       <a href="mailto:support@yaproll.app">Contacto</a>
     </nav>
+    <details class="lang-menu lang-menu-up">
+      <summary title="Idioma"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt=""><span class="sr-only">Idioma: Español</span></summary>
+      <nav class="lang-list" aria-label="Idioma">
+        <a href="../child-safety.html" hreflang="en" lang="en"><img class="flag" src="../assets/flags/gb.svg" width="21" height="14" alt="">English</a>
+        <a href="child-safety.html" hreflang="es" lang="es" aria-current="true"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt="">Español</a>
+        <a href="../pt/child-safety.html" hreflang="pt" lang="pt"><img class="flag" src="../assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
+        <a href="../fr/child-safety.html" hreflang="fr" lang="fr"><img class="flag" src="../assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
+        <a href="../de/child-safety.html" hreflang="de" lang="de"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
+      </nav>
+    </details>
     <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll es para adultos de 18 años o más. Google Play y el logotipo de Google Play son marcas de Google LLC. App Store es una marca de servicio de Apple Inc.</p>
   </div>
 </footer>

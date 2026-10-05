@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://yaproll.app/</loc></url>
+  <url><loc>https://yaproll.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/"/>
+  </url>
+  <url><loc>https://yaproll.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/"/>
+  </url>
+  <url><loc>https://yaproll.app/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/"/>
+  </url>
+  <url><loc>https://yaproll.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/"/>
+  </url>
+  <url><loc>https://yaproll.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yaproll.app/de/"/>
+  </url>
   <url><loc>https://yaproll.app/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html"/>

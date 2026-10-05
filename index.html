@@ -3,18 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YapRoll — Tap Search. Get a stranger who is online right now.</title>
-<meta name="description" content="YapRoll pairs you with the first person online who matches your preferences, and turns that pairing into a conversation. Text and voice notes. 18+. Android.">
+<title>YapRoll · Tap Search and talk to someone who's online right now</title>
+<meta name="description" content="YapRoll pairs you with the first person online who fits what you're looking for, and the pairing becomes a conversation you can keep. For adults, on Android.">
 <link rel="canonical" href="https://yaproll.app/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="YapRoll">
-<meta property="og:description" content="Tap Search. Get a stranger who is online right now. Keep the ones worth keeping.">
+<meta property="og:description" content="Tap Search and you're talking to someone who's online right now.">
 <meta property="og:url" content="https://yaproll.app/">
 <meta property="og:image" content="https://yaproll.app/assets/logo-mark.svg">
+<link rel="alternate" hreflang="en" href="https://yaproll.app/">
+<link rel="alternate" hreflang="es" href="https://yaproll.app/es/">
+<link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/">
+<link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/">
+<link rel="alternate" hreflang="de" href="https://yaproll.app/de/">
+<link rel="alternate" hreflang="x-default" href="https://yaproll.app/">
 <meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -26,6 +33,20 @@
       <a href="index.html#how">How it works</a>
       <a href="index.html#safety">Safety</a>
       <a class="nav-keep" href="terms.html">Legal</a>
+      <details class="lang-menu">
+      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
+      <nav class="lang-list" aria-label="Language">
+        <a href="index.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
+        <a href="es/index.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
+        <a href="pt/index.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
+        <a href="fr/index.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
+        <a href="de/index.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
+      </nav>
+    </details>
+      <button class="theme-toggle" type="button" hidden data-to-light="Switch to light theme" data-to-dark="Switch to dark theme" aria-label="Switch to light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -35,21 +56,19 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="mono eyebrow">Instant stranger chat · 18+ · Android</p>
-      <h1>Tap Search. Get a stranger who is online right now.</h1>
-      <p class="lede">No browsing, no swiping, no waiting. YapRoll pairs you with the first person online who fits what you're looking for, and the pairing becomes a conversation you can keep — or delete.</p>
+      <p class="mono eyebrow">Stranger chat for adults · Android</p>
+      <h1>Tap Search and talk to someone who's online now.</h1>
+      <p class="lede">YapRoll skips the browsing and the swiping. It pairs you with the first person online who fits what you're looking for, and that pairing becomes a conversation that lasts as long as the two of you keep it going.</p>
       <div class="cta">
         <span class="btn btn-soon">Coming soon to Google Play</span>
         <a class="btn btn-ghost" href="#how">How it works</a>
-        <p class="fine">Free with ads. Ad-free subscription available. Sign in with Google — no phone number.</p>
+        <p class="fine">It's free to use, and an optional subscription takes the ads away.</p>
       </div>
     </div>
 
     <figure class="screen">
-      <picture>
-        <source srcset="assets/screens/thread-light.webp" media="(prefers-color-scheme: light)">
-        <img src="assets/screens/thread-dark.webp" width="720" height="1600" alt="A YapRoll conversation with Mara, shown online: a few messages, a reply quoting a question, and a voice note.">
-      </picture>
+      <img class="shot-dark" src="assets/screens/thread-dark.webp" width="720" height="1600" loading="lazy" decoding="async" alt="A YapRoll conversation with Mara, who is online, with a quoted reply and a voice note.">
+      <img class="shot-light" src="assets/screens/thread-light.webp" width="720" height="1600" loading="lazy" decoding="async" alt="A YapRoll conversation with Mara, who is online, with a quoted reply and a voice note.">
     </figure>
   </div>
 </section>
@@ -57,22 +76,22 @@
 <section id="how">
   <div class="wrap">
     <p class="mono muted">How it works</p>
-    <h2 class="section-title">Three taps, one conversation.</h2>
+    <h2 class="section-title">You set your preferences once. After that, it's one tap.</h2>
     <div class="grid">
       <article class="card">
         <span class="step">01</span>
-        <h3>Say who you want to meet</h3>
-        <p>Age range, sexes, languages, region. Your preferences are also your visibility: only people who fit them — and whose preferences you fit — can be paired with you.</p>
+        <h3>Say who you'd like to meet</h3>
+        <p>Choose the ages, sexes, languages and region you're open to. Those same choices decide who can find you.</p>
       </article>
       <article class="card">
         <span class="step">02</span>
         <h3>Tap Search</h3>
-        <p>You are paired with the first eligible person who is online right now. Not a queue, not a feed — one person, immediately.</p>
+        <p>YapRoll pairs you with the first person who fits and has the app open right now. You get one person, straight away, and you can say hello before you've had time to overthink it.</p>
       </article>
       <article class="card">
         <span class="step">03</span>
         <h3>Keep the ones worth keeping</h3>
-        <p>The pairing becomes a conversation in your chats: text and voice notes, delivered and read receipts, and a Delete button that ends it for both of you.</p>
+        <p>The pairing becomes a conversation in your Chats. You can type, or send voice notes and GIFs, and you'll see when each message is delivered and read. And if it isn't going anywhere, tap Delete for both and it's gone from both phones.</p>
       </article>
     </div>
   </div>
@@ -83,14 +102,14 @@
     <div>
       <p class="mono muted">Why YapRoll</p>
       <h2 class="section-title">Nobody scrolls past you, because nobody scrolls.</h2>
-      <p class="muted">There are no profiles to browse and no way to look somebody up. The only way to meet a person on YapRoll is to be paired with them, which means the only people who ever see your profile are the ones you are already talking to.</p>
+      <p class="muted">There's no directory of profiles here and no way to look anyone up. You meet people on YapRoll when the app pairs you, so the only people who ever see your profile are the ones you're already talking to. We think that's how it should be.</p>
     </div>
     <ul class="check">
-      <li><strong>Symmetric filters.</strong> The same preferences decide who you find and who can find you.</li>
-      <li><strong>Text and voice.</strong> Type, or hold to record a voice note. No video, no photos in chat.</li>
-      <li><strong>Online means online.</strong> You are paired with people whose app is open right now.</li>
-      <li><strong>Yours to end.</strong> Delete a conversation and it is gone for both of you. Delete your account and everything follows within 30 days.</li>
-      <li><strong>Just a Google account.</strong> No phone number, no password to remember.</li>
+      <li><strong>It works both ways.</strong> You only meet people whose own preferences include someone like you.</li>
+      <li><strong>Messages and voice notes.</strong> Type, or hold the mic to record. GIFs are there too, but there's no video, and photos can't be sent in a chat.</li>
+      <li><strong>Only people who are there.</strong> Search pairs you with someone whose app is open at that moment, so your first message reaches somebody who's actually around.</li>
+      <li><strong>Easy to leave.</strong> Delete your account in Settings and everything goes after 30 days, conversations included. If you change your mind before then, signing back in brings it all back.</li>
+      <li><strong>Just your Google account.</strong> There's no new password to remember, and we never ask for your phone number.</li>
     </ul>
   </div>
 </section>
@@ -98,23 +117,23 @@
 <section id="safety">
   <div class="wrap">
     <p class="mono muted">Safety</p>
-    <h2 class="section-title">Strangers, on purpose. Safe, by design.</h2>
+    <h2 class="section-title">Meeting strangers is the whole idea. Feeling safe while you do it shouldn't be optional.</h2>
     <div class="grid">
       <article class="card">
-        <h3>18 and over</h3>
-        <p>Your date of birth is confirmed when you sign up and never shown to anyone. An account under 18 cannot be created.</p>
+        <h3>Adults only</h3>
+        <p>You give your date of birth when you sign up, and the app won't create an account for anyone under 18. Nobody else ever sees it.</p>
       </article>
       <article class="card">
-        <h3>Every photo is checked first</h3>
-        <p>A profile photo is reviewed automatically before anybody else can see it. Borderline ones go to a person. Rejected ones are removed at once.</p>
+        <h3>Photos are checked first</h3>
+        <p>Every profile photo goes through an automatic check before anyone else can see it. If the check isn't sure, a moderator takes a look, and a photo that breaks the rules comes down straight away.</p>
       </article>
       <article class="card">
-        <h3>Report and Block, always</h3>
-        <p>Both are one tap away in every conversation. A blocked person cannot reach you again and is never told they were blocked.</p>
+        <h3>Report or Block, any time</h3>
+        <p>Both are in the menu of every conversation. Once you block someone they can't reach you again, and nothing tells them you did it.</p>
       </article>
       <article class="card">
-        <h3>Real moderation</h3>
-        <p>A report goes to a moderator with the conversation's last twenty messages, frozen at that moment. Actions on an account are shown to its owner in the app.</p>
+        <h3>A person reads every report</h3>
+        <p>When you report someone, a moderator looks at it within 24 hours, with the last 20 messages of that conversation exactly as they were when you sent it. If we act on an account, its owner can see what we did and why under Account notices.</p>
       </article>
     </div>
   </div>
@@ -124,12 +143,12 @@
   <div class="wrap split">
     <div>
       <p class="mono muted">Ad-free</p>
-      <h2 class="section-title">Free with ads. Or not.</h2>
-      <p class="muted">The free tier shows a banner and an occasional full-screen ad. The ad-free subscription removes both, and keeps your account out of the inactivity clean-up. Monthly or annual, sold and managed through Google Play, with prices shown in the store before you buy.</p>
+      <h2 class="section-title">Free to use, with ads you can switch off.</h2>
+      <p class="muted">The free version shows a banner and, now and then, a full-screen ad. A subscription removes both, and it also keeps your account clear of the 90-day clean-up of inactive accounts. You can pay monthly or yearly through Google Play, which shows you the price before you buy.</p>
     </div>
     <div class="card">
-      <h3>Manage or cancel any time</h3>
-      <p>Subscriptions are handled by Google Play. Open <a href="https://support.google.com/googleplay/answer/7018481">Play's subscription page</a> to change or cancel, or use Manage subscription in the app's Settings.</p>
+      <h3>Change or cancel whenever you like</h3>
+      <p>Google Play handles the billing, so you can change or cancel from <a href="https://support.google.com/googleplay/answer/7018481">Play's subscriptions page</a>, or tap Manage subscription in the app's Settings.</p>
     </div>
   </div>
 </section>
@@ -147,6 +166,16 @@
       <a href="delete-account.html">Delete your account</a>
       <a href="mailto:support@yaproll.app">Contact</a>
     </nav>
+    <details class="lang-menu lang-menu-up">
+      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
+      <nav class="lang-list" aria-label="Language">
+        <a href="index.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
+        <a href="es/index.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
+        <a href="pt/index.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
+        <a href="fr/index.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
+        <a href="de/index.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
+      </nav>
+    </details>
     <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
   </div>
 </footer>

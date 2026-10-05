@@ -4,8 +4,11 @@
    The palette is the app's: ink (#0A0E17) and volt (#D4FF00). Dark is the
    default, as in the app. Light is the prototype's inversion — cream paper,
    ink as the brand surface, volt as the accent — not a white-paper theme.
-   The theme is the visitor's own: light or dark as their system says, with
-   no switch and nothing remembered (I2f), as the app does by default. */
+   The theme follows the system unless the header's switch has set
+   data-theme on the root; the switch keeps its choice in the visitor's own
+   browser (site.js). Which of the switch's icons shows, and which of the
+   hero's two screenshots, follow the same two inputs, here -- never from
+   the script. */
 
 /* The fonts are served from this site, never from a font CDN: a font
    fetched from a third party hands every visitor's IP address to it. Both
@@ -67,8 +70,11 @@
   color-scheme: dark;
 }
 
+/* Light, from the system unless the switch chose dark, or from the switch
+   on a dark system. The same palette twice: a media query and a selector
+   cannot share one block. */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --surface-app: #F7FFD8;
     --surface-raised: #FDFFF0;
     --surface-sunken: #EEFFB4;
@@ -88,6 +94,26 @@
     --mark: url("logo-mark-light.svg");
     color-scheme: light;
   }
+}
+:root[data-theme="light"] {
+  --surface-app: #F7FFD8;
+  --surface-raised: #FDFFF0;
+  --surface-sunken: #EEFFB4;
+  --surface-subtle: #EDFFAD;
+  --surface-brand: #0A0E17;
+  --surface-brand-hover: #131A29;
+  --text-primary: #0A0E17;
+  --text-secondary: #35435A;
+  --text-muted: #4E5F79;
+  --text-brand: #0A0E17;
+  --text-on-brand: #D4FF00;
+  --text-link: #0A5B6B;
+  --border-subtle: rgba(10, 14, 23, .12);
+  --border-default: rgba(10, 14, 23, .22);
+  --border-strong: rgba(10, 14, 23, .34);
+  --halo: rgba(10, 14, 23, .10);
+  --mark: url("logo-mark-light.svg");
+  color-scheme: light;
 }
 
 /* ---- base ---- */
@@ -130,9 +156,64 @@ p { margin: 0 0 1rem; }
 .lockup { display: inline-flex; align-items: center; gap: .6rem; color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em; }
 .mark { width: 32px; height: 32px; border-radius: 8px; background: var(--mark) center / contain no-repeat; flex: none; }
 .nav { margin-left: auto; display: flex; align-items: center; gap: .25rem; }
-.nav a { color: var(--text-secondary); text-decoration: none; padding: .5rem .7rem; border-radius: var(--radius-sm); font-size: .95rem; }
-.nav a:hover, .nav a[aria-current="page"] { color: var(--text-primary); background: var(--surface-subtle); }
-@media (max-width: 40rem) { .nav a:not(.nav-keep) { display: none; } }
+.nav > a { color: var(--text-secondary); text-decoration: none; padding: .5rem .7rem; border-radius: var(--radius-sm); font-size: .95rem; white-space: nowrap; }
+.nav > a:hover, .nav > a[aria-current="page"] { color: var(--text-primary); background: var(--surface-subtle); }
+/* The theme switch. Hidden until site.js runs, so a visitor without
+   scripts never sees a button that does nothing. */
+.theme-toggle {
+  margin-left: .25rem; width: 2.4rem; height: 2.4rem; padding: 0; border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default); background: transparent; color: var(--text-secondary);
+  cursor: pointer; display: inline-grid; place-items: center; flex: none;
+}
+.theme-toggle:hover { color: var(--text-primary); border-color: var(--border-strong); background: var(--surface-subtle); }
+.theme-toggle[hidden] { display: none; }
+.theme-toggle svg { width: 18px; height: 18px; }
+/* One icon at a time, naming the theme a tap switches to: the sun on a
+   dark page, the moon on a light one. */
+.theme-toggle .icon-moon { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .theme-toggle .icon-sun { display: none; }
+  :root:not([data-theme="dark"]) .theme-toggle .icon-moon { display: block; }
+}
+:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+/* A phone keeps the lockup, Legal and the two buttons, on one line. */
+@media (max-width: 40rem) {
+  .nav > a:not(.nav-keep) { display: none; }
+  .site-header .wrap { gap: .6rem; }
+  .nav > a { padding: .5rem .55rem; }
+}
+
+/* The language menu, in the header and the footer. A <details>, so it
+   opens and closes without a script. Closed, the page's flag and nothing
+   else; open, every language with its flag and its own name. The
+   footer's opens upwards. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.flag { display: block; flex: none; width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px var(--border-subtle); }
+.lang-menu { position: relative; }
+.lang-menu summary {
+  list-style: none; cursor: pointer; width: 2.4rem; height: 2.4rem; border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default); display: grid; place-items: center;
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { border-color: var(--border-strong); background: var(--surface-subtle); }
+.lang-menu .lang-list {
+  position: absolute; z-index: 6; top: calc(100% + .4rem); right: 0; min-width: 11rem;
+  display: grid; gap: .1rem; padding: .35rem; background: var(--surface-raised);
+  border: 1px solid var(--border-default); border-radius: var(--radius-sm);
+  box-shadow: 0 16px 40px -20px rgba(0, 0, 0, .5);
+}
+.lang-menu-up .lang-list { top: auto; bottom: calc(100% + .4rem); }
+.lang-menu .lang-list a {
+  display: flex; align-items: center; gap: .65rem; padding: .5rem .65rem; border-radius: 8px;
+  color: var(--text-secondary); text-decoration: none; font-size: .95rem; white-space: nowrap;
+}
+.lang-menu .lang-list a:hover { color: var(--text-primary); background: var(--surface-subtle); text-decoration: none; }
+.lang-menu .lang-list a[aria-current] { color: var(--text-primary); font-weight: 700; background: var(--surface-subtle); }
+.site-footer .lang-menu { margin-left: auto; }
 
 /* ---- buttons ---- */
 .btn {
@@ -163,15 +244,38 @@ p { margin: 0 0 1rem; }
 .cta { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
 .cta .fine { width: 100%; color: var(--text-muted); font-size: .9rem; margin-top: .25rem; }
 
-/* The app itself: a screenshot of the current build, dark or light as the
-   visitor's system is (the <picture> chooses), in a slim frame. */
+/* The app itself, in a phone: a screenshot of the current build inside a
+   dark body with rounded corners, a front camera over the status bar and
+   a side button. The body stays dark on the light page, as phones do. */
 .screen {
-  justify-self: center; margin: 0; width: min(19rem, 82%);
-  padding: .5rem; border-radius: 2.6rem;
-  background: var(--surface-raised); border: 1px solid var(--border-default);
-  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .55);
+  position: relative; justify-self: center; margin: 0; width: min(19rem, 82%);
+  padding: .7rem; border-radius: 3.1rem; background: #05070C;
+  box-shadow:
+    0 0 0 1px #2B3547,
+    0 0 0 5px #10151F,
+    0 0 0 6px #2B3547,
+    0 40px 90px -30px rgba(0, 0, 0, .6);
 }
-.screen img { display: block; width: 100%; height: auto; border-radius: 2.15rem; }
+.screen img { display: block; width: 100%; height: auto; border-radius: 2.4rem; }
+.screen::before {
+  content: ""; position: absolute; z-index: 1; top: 1.05rem; left: 50%;
+  width: .6rem; height: .6rem; margin-left: -.3rem; border-radius: 50%;
+  background: #05070C; box-shadow: 0 0 0 2px #151B27;
+}
+.screen::after {
+  content: ""; position: absolute; right: -10px; top: 7rem; width: 4px; height: 3.6rem;
+  border-radius: 0 4px 4px 0; background: #2B3547;
+}
+/* The screenshot that matches the page. The stylesheet chooses, as it does
+   for the switch's icon: a <picture> would follow the system alone and show
+   the dark one on a page the switch has turned light. */
+.screen .shot-light { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .screen .shot-dark { display: none; }
+  :root:not([data-theme="dark"]) .screen .shot-light { display: block; }
+}
+:root[data-theme="light"] .screen .shot-dark { display: none; }
+:root[data-theme="light"] .screen .shot-light { display: block; }
 
 /* Google's own badge, as Google supplies it: its transparent margin is the
    clear space the badge rules ask for, so only the left edge is pulled in
