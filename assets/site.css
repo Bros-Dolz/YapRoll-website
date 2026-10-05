@@ -4,7 +4,8 @@
    The palette is the app's: ink (#0A0E17) and volt (#D4FF00). Dark is the
    default, as in the app. Light is the prototype's inversion — cream paper,
    ink as the brand surface, volt as the accent — not a white-paper theme.
-   The theme follows the system unless the toggle has set data-theme. */
+   The theme is the visitor's own: light or dark as their system says, with
+   no switch and nothing remembered (I2f), as the app does by default. */
 
 /* The fonts are served from this site, never from a font CDN: a font
    fetched from a third party hands every visitor's IP address to it. Both
@@ -67,7 +68,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
+  :root {
     --surface-app: #F7FFD8;
     --surface-raised: #FDFFF0;
     --surface-sunken: #EEFFB4;
@@ -87,26 +88,6 @@
     --mark: url("logo-mark-light.svg");
     color-scheme: light;
   }
-}
-:root[data-theme="light"] {
-  --surface-app: #F7FFD8;
-  --surface-raised: #FDFFF0;
-  --surface-sunken: #EEFFB4;
-  --surface-subtle: #EDFFAD;
-  --surface-brand: #0A0E17;
-  --surface-brand-hover: #131A29;
-  --text-primary: #0A0E17;
-  --text-secondary: #35435A;
-  --text-muted: #4E5F79;
-  --text-brand: #0A0E17;
-  --text-on-brand: #D4FF00;
-  --text-link: #0A5B6B;
-  --border-subtle: rgba(10, 14, 23, .12);
-  --border-default: rgba(10, 14, 23, .22);
-  --border-strong: rgba(10, 14, 23, .34);
-  --halo: rgba(10, 14, 23, .10);
-  --mark: url("logo-mark-light.svg");
-  color-scheme: light;
 }
 
 /* ---- base ---- */
@@ -151,14 +132,6 @@ p { margin: 0 0 1rem; }
 .nav { margin-left: auto; display: flex; align-items: center; gap: .25rem; }
 .nav a { color: var(--text-secondary); text-decoration: none; padding: .5rem .7rem; border-radius: var(--radius-sm); font-size: .95rem; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--text-primary); background: var(--surface-subtle); }
-.theme-toggle {
-  margin-left: .25rem; width: 2.4rem; height: 2.4rem; border-radius: var(--radius-sm);
-  border: 1px solid var(--border-default); background: transparent; color: var(--text-secondary);
-  cursor: pointer; display: inline-grid; place-items: center;
-}
-.theme-toggle:hover { color: var(--text-primary); border-color: var(--border-strong); }
-.theme-toggle svg { width: 18px; height: 18px; }
-.theme-toggle[hidden] { display: none; }
 @media (max-width: 40rem) { .nav a:not(.nav-keep) { display: none; } }
 
 /* ---- buttons ---- */
@@ -190,24 +163,23 @@ p { margin: 0 0 1rem; }
 .cta { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
 .cta .fine { width: 100%; color: var(--text-muted); font-size: .9rem; margin-top: .25rem; }
 
-/* phone mock — a chat thread drawn in CSS, no image to keep in sync */
-.phone {
-  justify-self: center; width: min(19rem, 90%); aspect-ratio: 9 / 18.5;
-  border-radius: 2.2rem; border: 1px solid var(--border-default);
-  background: var(--surface-raised); padding: 1rem .9rem; display: flex; flex-direction: column; gap: .6rem;
-  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .6);
+/* The app itself: a screenshot of the current build, dark or light as the
+   visitor's system is (the <picture> chooses), in a slim frame. */
+.screen {
+  justify-self: center; margin: 0; width: min(19rem, 82%);
+  padding: .5rem; border-radius: 2.6rem;
+  background: var(--surface-raised); border: 1px solid var(--border-default);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .55);
 }
-.phone .bar { display: flex; align-items: center; gap: .6rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border-subtle); }
-.phone .avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--surface-subtle); position: relative; }
-.phone .avatar::after { content: ""; position: absolute; right: -2px; bottom: -2px; width: 10px; height: 10px; border-radius: 50%; background: var(--volt-500); border: 2px solid var(--surface-raised); }
-.phone .who { font-size: .85rem; font-weight: 700; }
-.phone .who small { display: block; font-weight: 400; color: var(--text-muted); font-size: .7rem; }
-.bubble { max-width: 82%; padding: .55rem .75rem; border-radius: 1rem; font-size: .82rem; line-height: 1.35; background: var(--surface-subtle); }
-.bubble.me { align-self: flex-end; background: var(--surface-brand); color: var(--text-on-brand); border-bottom-right-radius: .3rem; }
-.bubble.them { align-self: flex-start; border-bottom-left-radius: .3rem; }
-.bubble.voice { display: flex; align-items: center; gap: .5rem; }
-.bubble.voice i { display: inline-block; width: 3.6rem; height: 6px; border-radius: 3px; background: linear-gradient(90deg, currentColor 55%, transparent 55%); opacity: .7; }
-.phone .composer { margin-top: auto; height: 2.2rem; border-radius: 1.1rem; border: 1px solid var(--border-default); display: flex; align-items: center; padding: 0 .8rem; color: var(--text-muted); font-size: .8rem; }
+.screen img { display: block; width: 100%; height: auto; border-radius: 2.15rem; }
+
+/* Google's own badge, as Google supplies it: its transparent margin is the
+   clear space the badge rules ask for, so only the left edge is pulled in
+   to line the badge up with the text above it. */
+.badge { display: inline-block; line-height: 0; margin-left: -.75rem; }
+.badge img { height: 4.6rem; width: auto; }
+/* Until the listing is public: says so, and is not a link. */
+.btn-soon { background: transparent; color: var(--text-secondary); border: 1px dashed var(--border-strong); cursor: default; }
 
 /* ---- sections ---- */
 section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
@@ -252,14 +224,44 @@ section + section { border-top: 1px solid var(--border-subtle); }
   border-radius: var(--radius-sm); padding: .9rem 1rem; margin: 1.25rem 0; background: var(--surface-raised);
 }
 .callout p:last-child { margin-bottom: 0; }
-.doc-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
-.doc-nav a { font-size: .9rem; padding: .35rem .7rem; border: 1px solid var(--border-default); border-radius: 999px; color: var(--text-secondary); text-decoration: none; }
-.doc-nav a[aria-current="page"] { border-color: var(--surface-brand); color: var(--text-primary); }
-.doc-nav a:hover { color: var(--text-primary); border-color: var(--border-strong); }
-.lang-nav { display: flex; flex-wrap: wrap; gap: .25rem .9rem; margin: -1.25rem 0 2rem; font-family: var(--font-mono); font-size: .8rem; letter-spacing: .02em; }
-.lang-nav a { color: var(--text-muted); text-decoration: none; }
-.lang-nav a[aria-current] { color: var(--text-primary); font-weight: 700; }
-.lang-nav a:hover { color: var(--text-primary); text-decoration: underline; }
+/* The five documents and the five languages, beside the text on a wide
+   screen and folded into two disclosure menus on a phone -- both plain
+   HTML, no script. */
+.doc-layout { display: grid; gap: 2.5rem; grid-template-columns: minmax(0, 1fr); }
+.doc-layout .prose { max-width: 44rem; margin: 0; padding: 0; }
+.doc-side { display: none; }
+.side-label { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); margin: 1.4rem 0 .4rem .8rem; }
+.side-label:first-child { margin-top: 0; }
+.doc-side nav { display: grid; gap: .1rem; }
+.doc-side a { color: var(--text-secondary); text-decoration: none; padding: .38rem .75rem; border-left: 2px solid transparent; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.doc-side a:hover { color: var(--text-primary); background: var(--surface-subtle); }
+.doc-side a[aria-current] { color: var(--text-primary); font-weight: 700; border-left-color: var(--surface-brand); background: var(--surface-subtle); }
+.doc-menus { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.75rem; }
+.doc-menu { position: relative; }
+.doc-menu summary {
+  list-style: none; cursor: pointer; padding: .5rem .85rem; font-size: .92rem;
+  border: 1px solid var(--border-default); border-radius: var(--radius-sm); color: var(--text-primary);
+}
+.doc-menu summary::-webkit-details-marker { display: none; }
+.doc-menu summary::after { content: "\25BE"; margin-left: .5rem; color: var(--text-muted); }
+.doc-menu[open] summary::after { content: "\25B4"; }
+.doc-menu nav {
+  position: absolute; z-index: 4; top: calc(100% + .35rem); left: 0; min-width: 15rem;
+  display: grid; padding: .35rem; background: var(--surface-raised);
+  border: 1px solid var(--border-default); border-radius: var(--radius-sm);
+  box-shadow: 0 16px 40px -20px rgba(0, 0, 0, .5);
+}
+/* The right-hand menu opens leftwards, or it runs off a phone's edge. */
+.doc-menu:last-child nav { left: auto; right: 0; }
+.doc-menu nav a { padding: .5rem .65rem; color: var(--text-secondary); text-decoration: none; border-radius: 8px; }
+.doc-menu nav a:hover, .doc-menu nav a[aria-current] { color: var(--text-primary); background: var(--surface-subtle); }
+/* Wide enough for both: the lists beside the text, and no menus. Last, so
+   it outranks every base rule above it. */
+@media (min-width: 60rem) {
+  .doc-layout { grid-template-columns: 14rem minmax(0, 44rem); justify-content: center; gap: 3.5rem; }
+  .doc-side { display: grid; gap: .2rem; position: sticky; top: 5.5rem; align-self: start; font-size: .92rem; }
+  .doc-menus { display: none; }
+}
 kbd {
   font-family: var(--font-mono); font-size: .85em; padding: .1em .45em; border-radius: 6px;
   border: 1px solid var(--border-default); background: var(--surface-subtle); white-space: nowrap;

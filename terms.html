@@ -16,7 +16,6 @@
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,33 +26,54 @@
     <nav class="nav" aria-label="Site">
       <a href="index.html#how">How it works</a>
       <a href="index.html#safety">Safety</a>
-      <a class="nav-keep" href="privacy.html">Privacy</a>
-      <a class="nav-keep" href="terms.html" aria-current="page">Terms</a>
-      <button class="theme-toggle" type="button" hidden aria-label="Switch theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <a class="nav-keep" href="terms.html" aria-current="page">Legal</a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="doc">
-<div class="prose">
-<nav class="doc-nav" aria-label="Legal pages">
+<div class="wrap doc-layout">
+<aside class="doc-side">
+  <p class="side-label">Legal pages</p>
+  <nav aria-label="Legal pages">
   <a href="terms.html" aria-current="page">Terms of Service</a>
   <a href="community-guidelines.html">Community Guidelines</a>
   <a href="privacy.html">Privacy Policy</a>
   <a href="child-safety.html">Child Safety</a>
   <a href="delete-account.html">Delete your account</a>
-</nav>
-<nav class="lang-nav" aria-label="Language">
+  </nav>
+  <p class="side-label">Language</p>
+  <nav aria-label="Language">
   <a href="terms.html" hreflang="en" lang="en" aria-current="true">English</a>
   <a href="es/terms.html" hreflang="es" lang="es">Español</a>
   <a href="pt/terms.html" hreflang="pt" lang="pt">Português</a>
   <a href="fr/terms.html" hreflang="fr" lang="fr">Français</a>
   <a href="de/terms.html" hreflang="de" lang="de">Deutsch</a>
-</nav>
-
+  </nav>
+</aside>
+<div class="doc-menus">
+  <details class="doc-menu">
+    <summary>Terms of Service</summary>
+    <nav aria-label="Legal pages">
+  <a href="terms.html" aria-current="page">Terms of Service</a>
+  <a href="community-guidelines.html">Community Guidelines</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="child-safety.html">Child Safety</a>
+  <a href="delete-account.html">Delete your account</a>
+    </nav>
+  </details>
+  <details class="doc-menu">
+    <summary>English</summary>
+    <nav aria-label="Language">
+  <a href="terms.html" hreflang="en" lang="en" aria-current="true">English</a>
+  <a href="es/terms.html" hreflang="es" lang="es">Español</a>
+  <a href="pt/terms.html" hreflang="pt" lang="pt">Português</a>
+  <a href="fr/terms.html" hreflang="fr" lang="fr">Français</a>
+  <a href="de/terms.html" hreflang="de" lang="de">Deutsch</a>
+    </nav>
+  </details>
+</div>
+<article class="prose">
 <h1>Terms of Service</h1>
 <p class="meta">YapRoll · Effective 1 October 2026</p>
 
@@ -206,6 +226,7 @@
 <h2>20. Contact</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>United States<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>This email address is also our single point of contact for users and for authorities in the European Union under the Digital Services Act. Please write to us in English.</p>
+</article>
 </div>
 </main>
 
@@ -220,7 +241,7 @@
       <a href="delete-account.html">Delete your account</a>
       <a href="mailto:support@yaproll.app">Contact</a>
     </nav>
-    <p class="legal-line">&copy; <span data-year>2026</span> Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
+    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
   </div>
 </footer>
 </body>

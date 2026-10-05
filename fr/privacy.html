@@ -16,7 +16,6 @@
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/site.css">
-<script src="../assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
@@ -27,35 +26,56 @@
     <nav class="nav" aria-label="Site">
       <a href="../index.html#how">Comment ça marche</a>
       <a href="../index.html#safety">Sécurité</a>
-      <a class="nav-keep" href="privacy.html" aria-current="page">Confidentialité</a>
-      <a class="nav-keep" href="terms.html">Conditions</a>
-      <button class="theme-toggle" type="button" hidden aria-label="Changer de thème">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <a class="nav-keep" href="terms.html" aria-current="page">Informations légales</a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="doc">
-<div class="prose">
-<nav class="doc-nav" aria-label="Pages légales">
+<div class="wrap doc-layout">
+<aside class="doc-side">
+  <p class="side-label">Pages légales</p>
+  <nav aria-label="Pages légales">
   <a href="terms.html">Conditions d'utilisation</a>
   <a href="community-guidelines.html">Règles de la communauté</a>
   <a href="privacy.html" aria-current="page">Politique de confidentialité</a>
   <a href="child-safety.html">Sécurité des enfants</a>
   <a href="delete-account.html">Supprimer votre compte</a>
-</nav>
-<nav class="lang-nav" aria-label="Langue">
+  </nav>
+  <p class="side-label">Langue</p>
+  <nav aria-label="Langue">
   <a href="../privacy.html" hreflang="en" lang="en">English</a>
   <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
   <a href="../pt/privacy.html" hreflang="pt" lang="pt">Português</a>
   <a href="privacy.html" hreflang="fr" lang="fr" aria-current="true">Français</a>
   <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a>
-</nav>
-
+  </nav>
+</aside>
+<div class="doc-menus">
+  <details class="doc-menu">
+    <summary>Politique de confidentialité</summary>
+    <nav aria-label="Pages légales">
+  <a href="terms.html">Conditions d'utilisation</a>
+  <a href="community-guidelines.html">Règles de la communauté</a>
+  <a href="privacy.html" aria-current="page">Politique de confidentialité</a>
+  <a href="child-safety.html">Sécurité des enfants</a>
+  <a href="delete-account.html">Supprimer votre compte</a>
+    </nav>
+  </details>
+  <details class="doc-menu">
+    <summary>Français</summary>
+    <nav aria-label="Langue">
+  <a href="../privacy.html" hreflang="en" lang="en">English</a>
+  <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
+  <a href="../pt/privacy.html" hreflang="pt" lang="pt">Português</a>
+  <a href="privacy.html" hreflang="fr" lang="fr" aria-current="true">Français</a>
+  <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+    </nav>
+  </details>
+</div>
+<article class="prose">
 <h1>Politique de confidentialité</h1>
-<p class="meta">YapRoll · En vigueur depuis le 1er octobre 2026</p>
+<p class="meta">YapRoll · En vigueur depuis le 3 octobre 2026</p>
 
 <div class="callout">
 <p><strong>Ce qui change dans cette version.</strong> Cette version nomme la société qui exploite YapRoll et accorde à chacun les droits du RGPD et du droit californien en matière de vie privée, où qu'il vive. Elle couvre aussi beaucoup de choses que l'ancienne politique laissait de côté, de votre enregistrement de connexion, des réactions, des modifications, des réponses et des GIF à l'indicateur de saisie, aux journaux de sessions et de serveur, à l'application iPhone, au site, aux informations sensibles et à l'empreinte conservée d'un compte banni. Et la suppression de votre compte supprime désormais aussi votre enregistrement de connexion.</p>
@@ -138,6 +158,7 @@
 <tr><td><strong>OpenAI</strong></td><td>Vérifie chaque photo de profil (section 4). Selon les conditions de l'API d'OpenAI, la photo n'est pas utilisée pour entraîner ses modèles et est conservée 30 jours au maximum pour la surveillance des abus.</td></tr>
 <tr><td><strong>KLIPY</strong></td><td>Fournit les GIF. Vos recherches de GIF parviennent à KLIPY via notre serveur, jamais avec votre compte ; KLIPY ne voit qu'un code anonyme qui en est dérivé. Les GIF eux-mêmes, dans le panneau des GIF et dans les conversations, se chargent directement depuis les serveurs de KLIPY, qui voient l'adresse IP de votre appareil, comme n'importe quel site web.</td></tr>
 <tr><td><strong>GitHub</strong></td><td>Héberge le site yaproll.app et voit l'adresse IP de toute personne qui le consulte.</td></tr>
+<tr><td><strong>Cloudflare</strong></td><td>Achemine le site de GitHub jusqu'à votre navigateur et voit l'adresse IP de toute personne qui le consulte.</td></tr>
 </tbody>
 </table>
 </div>
@@ -202,7 +223,7 @@
 <p>YapRoll est réservé aux adultes. Il est impossible de créer un compte avec une date de naissance correspondant à moins de 18 ans, et un compte dont nous découvrons qu'il appartient à une personne de moins de 18 ans est supprimé. Nous ne collectons pas sciemment de données concernant des enfants. Si vous pensez qu'un enfant utilise YapRoll, signalez le compte dans l'application avec le motif Mineur, ou écrivez à <a href="mailto:support@yaproll.app">support@yaproll.app</a>.</p>
 
 <h2>13. Le site</h2>
-<p>yaproll.app n'utilise ni cookies, ni outils d'analyse, ni publicité. Si vous utilisez le bouton de thème, votre choix est mémorisé dans votre propre navigateur et ne nous est jamais envoyé. Le site est hébergé par GitHub, qui voit votre adresse IP lorsque vous le consultez, comme tout hébergeur web.</p>
+<p>yaproll.app n'utilise ni cookies, ni outils d'analyse, ni publicité, ni scripts, et n'enregistre rien dans votre navigateur : il suit simplement le mode clair ou sombre de votre appareil. GitHub héberge le site et Cloudflare l'achemine ; tous deux voient donc votre adresse IP lorsque vous le consultez, comme tout hébergeur web.</p>
 
 <h2>14. Modifications de cette politique</h2>
 <p>Nous pouvons modifier cette politique. Lorsque nous le faisons, nous mettons à jour la date en haut de la page et nous vous en informons dans l'application à sa prochaine ouverture, par un avis dont vous confirmez avoir pris connaissance. La version en vigueur est toujours celle de cette page.</p>
@@ -210,13 +231,14 @@
 <h2>15. Contact</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>États-Unis<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>Cette politique est disponible en anglais, espagnol, portugais, français et allemand. En cas de divergence entre une traduction et la version anglaise, la version anglaise prévaut, dans la mesure permise par la loi.</p>
+</article>
 </div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <a class="lockup" href="../index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav aria-label="Mentions légales">
+    <nav aria-label="Informations légales">
       <a href="terms.html">Conditions d'utilisation</a>
       <a href="community-guidelines.html">Règles de la communauté</a>
       <a href="privacy.html">Politique de confidentialité</a>
@@ -224,7 +246,7 @@
       <a href="delete-account.html">Supprimer votre compte</a>
       <a href="mailto:support@yaproll.app">Contact</a>
     </nav>
-    <p class="legal-line">&copy; <span data-year>2026</span> Bros Dolz LLC. YapRoll est réservé aux adultes de 18 ans et plus. Google Play est une marque de Google LLC. App Store est une marque de service d'Apple Inc.</p>
+    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll est réservé aux adultes de 18 ans et plus. Google Play et le logo Google Play sont des marques de Google LLC. App Store est une marque de service d'Apple Inc.</p>
   </div>
 </footer>
 </body>

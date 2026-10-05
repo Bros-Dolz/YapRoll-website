@@ -6,16 +6,15 @@
 <title>YapRoll — Tap Search. Get a stranger who is online right now.</title>
 <meta name="description" content="YapRoll pairs you with the first person online who matches your preferences, and turns that pairing into a conversation. Text and voice notes. 18+. Android.">
 <link rel="canonical" href="https://yaproll.app/">
-<meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="YapRoll">
 <meta property="og:description" content="Tap Search. Get a stranger who is online right now. Keep the ones worth keeping.">
 <meta property="og:url" content="https://yaproll.app/">
 <meta property="og:image" content="https://yaproll.app/assets/logo-mark.svg">
+<meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -24,14 +23,9 @@
   <div class="wrap">
     <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
     <nav class="nav" aria-label="Site">
-      <a href="#how">How it works</a>
-      <a href="#safety">Safety</a>
-      <a class="nav-keep" href="privacy.html">Privacy</a>
-      <a class="nav-keep" href="terms.html">Terms</a>
-      <button class="theme-toggle" type="button" hidden aria-label="Switch theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#safety">Safety</a>
+      <a class="nav-keep" href="terms.html">Legal</a>
     </nav>
   </div>
 </header>
@@ -45,26 +39,18 @@
       <h1>Tap Search. Get a stranger who is online right now.</h1>
       <p class="lede">No browsing, no swiping, no waiting. YapRoll pairs you with the first person online who fits what you're looking for, and the pairing becomes a conversation you can keep — or delete.</p>
       <div class="cta">
-        <a class="btn btn-brand" href="https://play.google.com/store/apps/details?id=com.yaproll.app">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4c-.4.3-.6.8-.6 1.4v16.4c0 .6.2 1.1.6 1.4l9.3-9.6-9.3-9.6zm12.1 6.8L5.4 3.3l8.4 8.7 1.9-2.8zM20 10.6l-2.8-1.6-2.2 3.2 2.2 3.2 2.8-1.6c.9-.5.9-1.7 0-2.2v-1zM5.4 20.7l10.3-5.9-1.9-2.8-8.4 8.7z"/></svg>
-          Get it on Google Play
-        </a>
+        <span class="btn btn-soon">Coming soon to Google Play</span>
         <a class="btn btn-ghost" href="#how">How it works</a>
         <p class="fine">Free with ads. Ad-free subscription available. Sign in with Google — no phone number.</p>
       </div>
     </div>
 
-    <div class="phone" aria-hidden="true">
-      <div class="bar">
-        <span class="avatar"></span>
-        <span class="who">Mara<small>Online</small></span>
-      </div>
-      <div class="bubble them">hey! paired with you 2 seconds ago apparently</div>
-      <div class="bubble me">yep. no idea who you are. that's the point</div>
-      <div class="bubble them voice"><i></i>0:07</div>
-      <div class="bubble me">ok that laugh is staying in my chats</div>
-      <div class="composer">Message</div>
-    </div>
+    <figure class="screen">
+      <picture>
+        <source srcset="assets/screens/thread-light.webp" media="(prefers-color-scheme: light)">
+        <img src="assets/screens/thread-dark.webp" width="720" height="1600" alt="A YapRoll conversation with Mara, shown online: a few messages, a reply quoting a question, and a voice note.">
+      </picture>
+    </figure>
   </div>
 </section>
 
@@ -161,7 +147,7 @@
       <a href="delete-account.html">Delete your account</a>
       <a href="mailto:support@yaproll.app">Contact</a>
     </nav>
-    <p class="legal-line">&copy; <span data-year>2026</span> Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
+    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
   </div>
 </footer>
 </body>

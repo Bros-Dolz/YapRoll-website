@@ -16,7 +16,6 @@
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/site.css">
-<script src="../assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar para o conteúdo</a>
@@ -27,35 +26,56 @@
     <nav class="nav" aria-label="Site">
       <a href="../index.html#how">Como funciona</a>
       <a href="../index.html#safety">Segurança</a>
-      <a class="nav-keep" href="privacy.html" aria-current="page">Privacidade</a>
-      <a class="nav-keep" href="terms.html">Termos</a>
-      <button class="theme-toggle" type="button" hidden aria-label="Mudar tema">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <a class="nav-keep" href="terms.html" aria-current="page">Informação legal</a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="doc">
-<div class="prose">
-<nav class="doc-nav" aria-label="Páginas legais">
+<div class="wrap doc-layout">
+<aside class="doc-side">
+  <p class="side-label">Páginas legais</p>
+  <nav aria-label="Páginas legais">
   <a href="terms.html">Termos de Serviço</a>
   <a href="community-guidelines.html">Diretrizes da comunidade</a>
   <a href="privacy.html" aria-current="page">Política de Privacidade</a>
   <a href="child-safety.html">Segurança infantil</a>
   <a href="delete-account.html">Eliminar a tua conta</a>
-</nav>
-<nav class="lang-nav" aria-label="Idioma">
+  </nav>
+  <p class="side-label">Idioma</p>
+  <nav aria-label="Idioma">
   <a href="../privacy.html" hreflang="en" lang="en">English</a>
   <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
   <a href="privacy.html" hreflang="pt" lang="pt" aria-current="true">Português</a>
   <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a>
   <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a>
-</nav>
-
+  </nav>
+</aside>
+<div class="doc-menus">
+  <details class="doc-menu">
+    <summary>Política de Privacidade</summary>
+    <nav aria-label="Páginas legais">
+  <a href="terms.html">Termos de Serviço</a>
+  <a href="community-guidelines.html">Diretrizes da comunidade</a>
+  <a href="privacy.html" aria-current="page">Política de Privacidade</a>
+  <a href="child-safety.html">Segurança infantil</a>
+  <a href="delete-account.html">Eliminar a tua conta</a>
+    </nav>
+  </details>
+  <details class="doc-menu">
+    <summary>Português</summary>
+    <nav aria-label="Idioma">
+  <a href="../privacy.html" hreflang="en" lang="en">English</a>
+  <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
+  <a href="privacy.html" hreflang="pt" lang="pt" aria-current="true">Português</a>
+  <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a>
+  <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+    </nav>
+  </details>
+</div>
+<article class="prose">
 <h1>Política de Privacidade</h1>
-<p class="meta">YapRoll · Em vigor desde 1 de outubro de 2026</p>
+<p class="meta">YapRoll · Em vigor desde 3 de outubro de 2026</p>
 
 <div class="callout">
 <p><strong>O que mudou nesta versão.</strong> Esta versão identifica a empresa por detrás do YapRoll e dá a todos os direitos de privacidade do RGPD e da lei da Califórnia, vivam onde viverem. Também abrange muito do que a política anterior deixava de fora, desde o teu registo de início de sessão, as reações, as edições, as respostas e os GIFs até ao indicador de escrita, os registos de sessões e do servidor, a aplicação para iPhone, o site, as informações sensíveis e a impressão digital guardada de uma conta banida. E eliminar a tua conta passa a eliminar também o teu registo de início de sessão.</p>
@@ -138,6 +158,7 @@
 <tr><td><strong>OpenAI</strong></td><td>Verifica cada foto de perfil (secção 4). Ao abrigo dos termos da API da OpenAI, a foto não é usada para treinar os seus modelos e é guardada no máximo 30 dias para monitorização de abusos.</td></tr>
 <tr><td><strong>KLIPY</strong></td><td>Fornece os GIFs. As tuas pesquisas de GIFs chegam à KLIPY através do nosso servidor, nunca com a tua conta; a KLIPY só vê um código anónimo derivado dela. Os próprios GIFs, no painel de GIFs e nas conversas, são carregados diretamente dos servidores da KLIPY, que veem o endereço IP do teu dispositivo, como qualquer site.</td></tr>
 <tr><td><strong>GitHub</strong></td><td>Aloja o site, yaproll.app, e vê o endereço IP de quem o visita.</td></tr>
+<tr><td><strong>Cloudflare</strong></td><td>Leva o site do GitHub até ao teu navegador e vê o endereço IP de quem o visita.</td></tr>
 </tbody>
 </table>
 </div>
@@ -202,7 +223,7 @@
 <p>O YapRoll é só para adultos. Não é possível criar uma conta com uma data de nascimento correspondente a menos de 18 anos, e uma conta que descubramos pertencer a alguém com menos de 18 anos é eliminada. Não recolhemos conscientemente dados de menores. Se achares que um menor está a usar o YapRoll, denuncia a conta na aplicação com o motivo Menor de idade, ou envia um email para <a href="mailto:support@yaproll.app">support@yaproll.app</a>.</p>
 
 <h2>13. O site</h2>
-<p>O yaproll.app não usa cookies, ferramentas de análise nem publicidade. Se usares o seletor de tema, a tua escolha fica guardada no teu próprio navegador e nunca é enviada para nós. O site está alojado no GitHub, que vê o teu endereço IP quando o visitas, como qualquer serviço de alojamento.</p>
+<p>O yaproll.app não usa cookies, ferramentas de análise, publicidade nem scripts, e não guarda nada no teu navegador: simplesmente segue o modo claro ou escuro do teu dispositivo. O GitHub aloja o site e a Cloudflare entrega-o, por isso ambos veem o teu endereço IP quando o visitas, como qualquer serviço de alojamento.</p>
 
 <h2>14. Alterações a esta política</h2>
 <p>Podemos alterar esta política. Quando o fazemos, atualizamos a data no topo e informamos-te na aplicação da próxima vez que a abrires, com um aviso em que confirmas que o viste. A versão em vigor é sempre a que está nesta página.</p>
@@ -210,6 +231,7 @@
 <h2>15. Contacto</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>Estados Unidos<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>Esta política está disponível em inglês, espanhol, português, francês e alemão. Se uma tradução e a versão em inglês não coincidirem, prevalece a versão em inglês, na medida em que a lei o permita.</p>
+</article>
 </div>
 </main>
 
@@ -224,7 +246,7 @@
       <a href="delete-account.html">Eliminar a tua conta</a>
       <a href="mailto:support@yaproll.app">Contacto</a>
     </nav>
-    <p class="legal-line">&copy; <span data-year>2026</span> Bros Dolz LLC. O YapRoll é para adultos com 18 anos ou mais. Google Play é uma marca da Google LLC. App Store é uma marca de serviço da Apple Inc.</p>
+    <p class="legal-line">&copy; 2026 Bros Dolz LLC. O YapRoll é para adultos com 18 anos ou mais. Google Play e o logótipo do Google Play são marcas da Google LLC. App Store é uma marca de serviço da Apple Inc.</p>
   </div>
 </footer>
 </body>

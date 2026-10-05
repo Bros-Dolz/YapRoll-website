@@ -16,7 +16,6 @@
 <meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/site.css">
-<script src="../assets/site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar para o conteúdo</a>
@@ -27,33 +26,54 @@
     <nav class="nav" aria-label="Site">
       <a href="../index.html#how">Como funciona</a>
       <a href="../index.html#safety">Segurança</a>
-      <a class="nav-keep" href="privacy.html">Privacidade</a>
-      <a class="nav-keep" href="terms.html">Termos</a>
-      <button class="theme-toggle" type="button" hidden aria-label="Mudar tema">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <a class="nav-keep" href="terms.html" aria-current="page">Informação legal</a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="doc">
-<div class="prose">
-<nav class="doc-nav" aria-label="Páginas legais">
+<div class="wrap doc-layout">
+<aside class="doc-side">
+  <p class="side-label">Páginas legais</p>
+  <nav aria-label="Páginas legais">
   <a href="terms.html">Termos de Serviço</a>
   <a href="community-guidelines.html" aria-current="page">Diretrizes da comunidade</a>
   <a href="privacy.html">Política de Privacidade</a>
   <a href="child-safety.html">Segurança infantil</a>
   <a href="delete-account.html">Eliminar a tua conta</a>
-</nav>
-<nav class="lang-nav" aria-label="Idioma">
+  </nav>
+  <p class="side-label">Idioma</p>
+  <nav aria-label="Idioma">
   <a href="../community-guidelines.html" hreflang="en" lang="en">English</a>
   <a href="../es/community-guidelines.html" hreflang="es" lang="es">Español</a>
   <a href="community-guidelines.html" hreflang="pt" lang="pt" aria-current="true">Português</a>
   <a href="../fr/community-guidelines.html" hreflang="fr" lang="fr">Français</a>
   <a href="../de/community-guidelines.html" hreflang="de" lang="de">Deutsch</a>
-</nav>
-
+  </nav>
+</aside>
+<div class="doc-menus">
+  <details class="doc-menu">
+    <summary>Diretrizes da comunidade</summary>
+    <nav aria-label="Páginas legais">
+  <a href="terms.html">Termos de Serviço</a>
+  <a href="community-guidelines.html" aria-current="page">Diretrizes da comunidade</a>
+  <a href="privacy.html">Política de Privacidade</a>
+  <a href="child-safety.html">Segurança infantil</a>
+  <a href="delete-account.html">Eliminar a tua conta</a>
+    </nav>
+  </details>
+  <details class="doc-menu">
+    <summary>Português</summary>
+    <nav aria-label="Idioma">
+  <a href="../community-guidelines.html" hreflang="en" lang="en">English</a>
+  <a href="../es/community-guidelines.html" hreflang="es" lang="es">Español</a>
+  <a href="community-guidelines.html" hreflang="pt" lang="pt" aria-current="true">Português</a>
+  <a href="../fr/community-guidelines.html" hreflang="fr" lang="fr">Français</a>
+  <a href="../de/community-guidelines.html" hreflang="de" lang="de">Deutsch</a>
+    </nav>
+  </details>
+</div>
+<article class="prose">
 <h1>Diretrizes da comunidade</h1>
 <p class="meta">YapRoll · Em vigor desde 1 de outubro de 2026</p>
 
@@ -185,6 +205,7 @@
 <li><strong>Se decidires encontrar-te com alguém pessoalmente</strong>, combina num local público e movimentado, diz a um amigo para onde vais e com quem, trata do teu próprio transporte e vai-te embora se algo não te parecer bem. Nunca deves um encontro a ninguém.</li>
 <li><strong>Confia no teu instinto.</strong> Se algo te parece estranho, provavelmente é. Bloqueia e denuncia essa pessoa, e segue em frente.</li>
 </ul>
+</article>
 </div>
 </main>
 
@@ -199,7 +220,7 @@
       <a href="delete-account.html">Eliminar a tua conta</a>
       <a href="mailto:support@yaproll.app">Contacto</a>
     </nav>
-    <p class="legal-line">&copy; <span data-year>2026</span> Bros Dolz LLC. O YapRoll é para adultos com 18 anos ou mais. Google Play é uma marca da Google LLC. App Store é uma marca de serviço da Apple Inc.</p>
+    <p class="legal-line">&copy; 2026 Bros Dolz LLC. O YapRoll é para adultos com 18 anos ou mais. Google Play e o logótipo do Google Play são marcas da Google LLC. App Store é uma marca de serviço da Apple Inc.</p>
   </div>
 </footer>
 </body>
