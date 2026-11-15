@@ -1,99 +1,64 @@
 <!doctype html>
+<!--
+  Source of https://yaproll.app/privacy.html (phase I2). tool/build_legal_site.py
+  wraps the main element in the site's header and footer. The four
+  translations live in es/, pt/, fr/ and de/ and keep this page's sections,
+  ids, links and numbers; legal_pages_test holds them to it.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — YapRoll</title>
 <meta name="description" content="What YapRoll collects, why, who else handles it, how long it is kept, and the rights everybody has over their data, wherever they live.">
-<link rel="canonical" href="https://yaproll.app/privacy.html">
-<link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html">
-<link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html">
-<link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html">
-<link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html">
-<link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html">
-<link rel="alternate" hreflang="x-default" href="https://yaproll.app/privacy.html">
-<meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js"></script>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0A0E17; background: #F7FFD8; margin: 0; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.1rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; }
+  p, li { margin: .45rem 0; }
+  a { color: #0A5B6B; }
+  .meta { color: #4E5F79; font-size: .85rem; margin-bottom: 1.5rem; }
+  .doc-nav, .lang-nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin-bottom: 1rem; font-size: .9rem; }
+  .lang-nav { margin-bottom: 1.75rem; }
+  .doc-nav a[aria-current], .lang-nav a[aria-current] { font-weight: 700; color: inherit; text-decoration: none; }
+  .callout { border-left: 4px solid #0A0E17; background: #FDFFF0; padding: .8rem 1rem; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem; border-top: 1px solid rgba(10,14,23,.22); }
+  .table-scroll { overflow-x: auto; }
+  kbd { font: .9em ui-monospace, Consolas, monospace; padding: .05em .4em; border: 1px solid rgba(10,14,23,.22); border-radius: 5px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #F7F9FB; background: #0A0E17; }
+    a { color: #37E6FF; }
+    .meta { color: #97A5B8; }
+    .callout { border-left-color: #D4FF00; background: #0E1320; }
+    th, td, kbd { border-color: #212C3F; }
+  }
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav class="nav" aria-label="Site">
-      <a href="index.html#how">How it works</a>
-      <a href="index.html#safety">Safety</a>
-      <a class="nav-keep" href="terms.html" aria-current="page">Legal</a>
-      <details class="lang-menu">
-      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
-      <nav class="lang-list" aria-label="Language">
-        <a href="privacy.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="es/privacy.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="pt/privacy.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="fr/privacy.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="de/privacy.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-      <button class="theme-toggle" type="button" hidden data-to-light="Switch to light theme" data-to-dark="Switch to dark theme" aria-label="Switch to light theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<main id="main" class="doc">
-<div class="wrap doc-layout">
-<aside class="doc-side">
-  <p class="side-label">Legal pages</p>
-  <nav aria-label="Legal pages">
+<main>
+<nav class="doc-nav" aria-label="Legal pages">
   <a href="terms.html">Terms of Service</a>
   <a href="community-guidelines.html">Community Guidelines</a>
   <a href="privacy.html" aria-current="page">Privacy Policy</a>
   <a href="child-safety.html">Child Safety</a>
   <a href="delete-account.html">Delete your account</a>
-  </nav>
-  <p class="side-label">Language</p>
-  <nav aria-label="Language">
+</nav>
+<nav class="lang-nav" aria-label="Language">
   <a href="privacy.html" hreflang="en" lang="en" aria-current="true">English</a>
   <a href="es/privacy.html" hreflang="es" lang="es">Español</a>
   <a href="pt/privacy.html" hreflang="pt" lang="pt">Português</a>
   <a href="fr/privacy.html" hreflang="fr" lang="fr">Français</a>
   <a href="de/privacy.html" hreflang="de" lang="de">Deutsch</a>
-  </nav>
-</aside>
-<div class="doc-menus">
-  <details class="doc-menu">
-    <summary>Privacy Policy</summary>
-    <nav aria-label="Legal pages">
-  <a href="terms.html">Terms of Service</a>
-  <a href="community-guidelines.html">Community Guidelines</a>
-  <a href="privacy.html" aria-current="page">Privacy Policy</a>
-  <a href="child-safety.html">Child Safety</a>
-  <a href="delete-account.html">Delete your account</a>
-    </nav>
-  </details>
-  <details class="doc-menu">
-    <summary>English</summary>
-    <nav aria-label="Language">
-  <a href="privacy.html" hreflang="en" lang="en" aria-current="true">English</a>
-  <a href="es/privacy.html" hreflang="es" lang="es">Español</a>
-  <a href="pt/privacy.html" hreflang="pt" lang="pt">Português</a>
-  <a href="fr/privacy.html" hreflang="fr" lang="fr">Français</a>
-  <a href="de/privacy.html" hreflang="de" lang="de">Deutsch</a>
-    </nav>
-  </details>
-</div>
-<article class="prose">
+</nav>
+
 <h1>Privacy Policy</h1>
-<p class="meta">YapRoll · Effective 5 October 2026</p>
+<p class="meta">YapRoll · Effective 15 November 2026</p>
 
 <div class="callout">
-<p><strong>What changed in this version.</strong> This version names the company behind YapRoll and gives everybody the privacy rights of the GDPR and of California law, wherever they live. It also covers a lot the old policy left out, from your sign-in record, reactions, edits, replies and GIFs to the typing indicator, session and server logs, the iPhone app, the website, sensitive information and the fingerprint kept of a banned account. And deleting your account now deletes your sign-in record too.</p>
+<p><strong>What changed in this version.</strong> This version covers what the app added in November 2026. YapRoll Plus and invites keep a few records of their own, listed in section 2. Photos you send in a conversation are checked before the other person sees them (section 4) and deleted after 90 days at most (section 9).</p>
 </div>
 
 <p>YapRoll is a chat app for adults. You tap Search, you are paired with somebody else who is online and matches your preferences, and that pairing becomes a conversation. This policy explains what YapRoll collects to make that work, why, who else handles it, how long it is kept, and what you can do about it.</p>
@@ -113,8 +78,8 @@
 <tr><td><strong>Sign-in sessions</strong></td><td>For each device you are signed in on: its IP address and a description of the app or browser.</td><td>To keep you signed in and to protect your account.</td></tr>
 <tr><td><strong>Your profile</strong></td><td>The display name you choose, your date of birth, your sex, what you are looking for (just chat, friendship or something more), your region, the languages you speak, and the photos you add.</td><td>Your date of birth confirms you are 18 or over and is never shown; your age is. Everything else is shown to the people you are paired with and is used to pair you.</td></tr>
 <tr><td><strong>Search preferences</strong></td><td>The age range, sexes, languages and regions you want to be paired with.</td><td>To choose who you are paired with. They also decide who can be paired with you.</td></tr>
-<tr><td><strong>Messages</strong></td><td>The text messages, voice notes (with their length and waveform) and GIFs you send and receive; replies, which carry a short quote of the message replied to; reactions; when a message was edited; and when each message was sent, delivered and read.</td><td>To deliver them and show the conversation to both of you.</td></tr>
-<tr><td><strong>Conversation settings</strong></td><td>Which conversations you have pinned, archived, muted or deleted, and which messages you have deleted for yourself.</td><td>To show your conversations the way you arranged them.</td></tr>
+<tr><td><strong>Messages</strong></td><td>The text messages, voice notes (with their length and waveform), GIFs and photos you send and receive; replies, which carry a short quote of the message replied to; reactions; when a message was edited; and when each message was sent, delivered and read. For a photo, also its size, the timer it was sent with, when it was opened, and a thumbnail a few pixels across from which a timed photo's blurred tile is drawn. The app sends the picture alone, made smaller and without its location or camera details. An ask to send photos is a message too.</td><td>To deliver them and show the conversation to both of you.</td></tr>
+<tr><td><strong>Conversation settings</strong></td><td>Which conversations you have pinned, archived, muted or deleted, which messages you have deleted for yourself, and whether you allow photos from the other person.</td><td>To show your conversations the way you arranged them.</td></tr>
 <tr><td><strong>Typing</strong></td><td>That you are typing.</td><td>Sent live to the other person in the conversation so they see “typing…”. It is not stored.</td></tr>
 <tr><td><strong>Presence</strong></td><td>Whether the app is open, and when it was last open.</td><td>To pair you with people who are actually online, and to show “Online” or “Last seen”.</td></tr>
 <tr><td><strong>Your device</strong></td><td>A push notification token issued for this installation, whether it is Android or iPhone, the language the app is set to, and the app's build number.</td><td>To send you a notification about a new message or reaction, in your language, while the app is closed, and to ask outdated versions of the app to update.</td></tr>
@@ -122,8 +87,9 @@
 <tr><td><strong>Safety records</strong></td><td>The people you block; the reports you file (the reason and any note you add) and any report filed about you; the moderation actions taken on your account and the notices sent to you.</td><td>To keep blocked people apart, to act on reports, and to tell you when action is taken on your account.</td></tr>
 <tr><td><strong>Report evidence</strong></td><td>When a conversation is reported, a copy of its last 20 text messages and GIFs, frozen at that moment, and a record of every time a moderator opens that copy.</td><td>So a moderator can see what was reported even if the messages are later deleted. Voice notes and photos are not copied. The record of who opened it keeps moderators accountable.</td></tr>
 <tr><td><strong>Ban fingerprint</strong></td><td>If your account is banned: a one-way cryptographic fingerprint of your sign-in account ID. It cannot be turned back into your email address or ID.</td><td>So a banned person cannot get around the ban by deleting the account and signing up again.</td></tr>
-<tr><td><strong>Photo review</strong></td><td>For each profile photo, the scores the automated check returned, and the moderator's decision if a person reviewed it.</td><td>To decide whether a photo can be shown (see section 4).</td></tr>
-<tr><td><strong>Subscription</strong></td><td>If you buy the ad-free subscription: the purchase token, the plan, its status and expiry date, whether it renews, and the purchase record Google Play or Apple returns.</td><td>To know you are subscribed on every device and after a reinstall. We never see your card or payment details.</td></tr>
+<tr><td><strong>Photo review</strong></td><td>For each profile photo and each photo you send in a conversation, the scores the automated check returned, and the moderator's decision if a person reviewed it.</td><td>To decide whether a photo can be shown or delivered (see section 4).</td></tr>
+<tr><td><strong>Subscription</strong></td><td>If you buy No Ads or YapRoll Plus, or start a free trial: the purchase token, the plan, its status and expiry date, whether it renews, and the purchase record Google Play or Apple returns. With YapRoll Plus, also the choices you make in its settings, such as hiding when you are online.</td><td>To know you are subscribed on every device and after a reinstall, and to apply your choices. We never see your card or payment details.</td></tr>
+<tr><td><strong>Invites</strong></td><td>Your invite code; who joined with it; on which days a new account opened the app during its first 14 days; and the days of YapRoll Plus each invite earned.</td><td>To give both of you the reward once it is earned, and to keep invites from being abused.</td></tr>
 <tr><td><strong>Advertising</strong></td><td>On the free tier, Google AdMob collects your device's advertising identifier, your IP address and the approximate location it reveals, information about your device, and how you interact with ads.</td><td>To show ads, and, only if you allow it, to personalise them (see section 5).</td></tr>
 <tr><td><strong>Server logs</strong></td><td>The IP address and time of each request the app makes to our servers.</td><td>To keep the service running and secure, and to investigate problems and abuse.</td></tr>
 <tr><td><strong>Your emails to us</strong></td><td>Whatever you write to support@yaproll.app, and your email address.</td><td>To answer you.</td></tr>
@@ -142,7 +108,7 @@
 <table>
 <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
 <tbody>
-<tr><td>Creating your account, pairing you, delivering your messages and notifications, showing your profile, providing the subscription</td><td>Providing the service you signed up for (contract)</td></tr>
+<tr><td>Creating your account, pairing you, delivering your messages, photos and notifications, showing your profile, providing subscriptions and invite rewards</td><td>Providing the service you signed up for (contract)</td></tr>
 <tr><td>Using what your profile and preferences reveal about your sex life or orientation, to pair you</td><td>Your explicit consent, given when you tap “I agree” in the app; you withdraw it by deleting your account</td></tr>
 <tr><td>Checking photos, acting on reports, keeping safety records and the ban fingerprint, preventing spam and abuse, keeping the service secure</td><td>Our legitimate interest, and yours, in a service that is safe to use</td></tr>
 <tr><td>Personalised ads</td><td>Your consent, which you can withdraw at any time under Settings › Ad preferences</td></tr>
@@ -154,7 +120,8 @@
 
 <h2>4. Automated photo review</h2>
 <p>Every profile photo you add is checked automatically before anybody else can see it. The photo is sent to OpenAI's moderation service, which returns scores for sexual, violent and self-harm content. Photos that score clearly low are shown and photos that score clearly high are removed. Anything in between waits for a moderator.</p>
-<p>A removed photo counts against your account, and enough of them lead automatically to a warning and then to suspensions, as set out in the <a href="community-guidelines.html#enforcement">Community Guidelines</a>. Because these decisions can be made without a person, <strong>you always have the right to have a person review them</strong>: appeal as described in section 5 of the <a href="terms.html">Terms of Service</a>.</p>
+<p>A photo you send in a conversation goes through the same check before the other person sees it. One that clearly shows sexual content or graphic violence is not delivered, and it counts against your account. One that shows self-harm is not delivered either, but it does not count, and the app points you to where to find help. Anything else is delivered. Moderators do not see the photos you send in a conversation, even when the conversation is reported.</p>
+<p>Each photo the check removes counts against your account, except one sent in a conversation that showed self-harm. Enough of them lead automatically to a warning and then to suspensions, and photos refused in a conversation can end in a ban, as set out in the <a href="community-guidelines.html#enforcement">Community Guidelines</a>. Because these decisions can be made without a person, <strong>you always have the right to have a person review them</strong>: appeal as described in section 5 of the <a href="terms.html">Terms of Service</a>.</p>
 <p>No other decision about you is made automatically. Pairing chooses among the people who match both sets of preferences, without any profiling.</p>
 
 <h2>5. Ads</h2>
@@ -170,7 +137,7 @@
 <tr><td><strong>Supabase</strong> (United States)</td><td>Hosts our database, the photos and voice notes, and our server code. Almost everything in section 2 is stored here.</td></tr>
 <tr><td><strong>Google</strong></td><td>Google Sign-In (your account), Firebase Cloud Messaging (notifications), Google Play Billing (subscriptions on Android) and Google AdMob (ads on the free tier).</td></tr>
 <tr><td><strong>Apple</strong></td><td>On iPhone: Sign in with Apple, App Store purchases, and the Apple Push Notification service that delivers notifications.</td></tr>
-<tr><td><strong>OpenAI</strong></td><td>Checks each profile photo (section 4). OpenAI does not use the photo to train its models, and says its moderation service does not keep it once the check is done.</td></tr>
+<tr><td><strong>OpenAI</strong></td><td>Checks each profile photo and each photo sent in a conversation (section 4). OpenAI does not use the photo to train its models, and says its moderation service does not keep it once the check is done.</td></tr>
 <tr><td><strong>KLIPY</strong></td><td>Provides the GIFs. Your GIF searches go to KLIPY through our server, never with your account; KLIPY sees only an anonymous code derived from it. The GIFs themselves, in the GIF panel and in conversations, load directly from KLIPY's servers, which see your device's IP address, as any website would.</td></tr>
 <tr><td><strong>GitHub</strong></td><td>Hosts the website, yaproll.app, and sees the IP address of anybody who visits it.</td></tr>
 <tr><td><strong>Cloudflare</strong></td><td>Delivers the website from GitHub to your browser, and sees the IP address of anybody who visits it.</td></tr>
@@ -184,9 +151,9 @@
 
 <h2>7. Who can see what</h2>
 <ul>
-<li><strong>Your profile</strong>, meaning your display name, age, sex, what you are looking for, region, languages, approved photos and whether you are online, is visible only to the people you are paired with. Strangers cannot look you up, and there is no public profile.</li>
-<li><strong>Your messages</strong> are visible to the other person in the conversation. Messages are not end-to-end encrypted: they are stored on our servers so they can be delivered to the other person's devices, and so that a reported conversation can be reviewed.</li>
-<li><strong>Moderators</strong> can see reports, the evidence attached to them, photos waiting for review, and your account's moderation history. They cannot read your conversations otherwise, and every time they open report evidence, it is recorded.</li>
+<li><strong>Your profile</strong>, meaning your display name, age, sex, what you are looking for, region, languages, approved photos and whether you are online, is visible only to the people you are paired with. With YapRoll Plus you can hide when you are online from them as well. Strangers cannot look you up, and there is no public profile.</li>
+<li><strong>Your messages</strong> are visible to the other person in the conversation. Messages are not end-to-end encrypted: they are stored on our servers so they can be delivered to the other person's devices, and so that a reported conversation can be reviewed. A photo you send is seen only by the other person. A timed photo can be opened while its timer runs and is then deleted for both of you. While it is open, the app blocks screenshots on Android, but nothing stops somebody photographing the screen with another phone.</li>
+<li><strong>Moderators</strong> can see reports, the evidence attached to them, profile photos waiting for review, and your account's moderation history. They cannot read your conversations otherwise, and every time they open report evidence, it is recorded. They never see the photos sent in a conversation.</li>
 <li>A person you block is not told that you blocked them.</li>
 <li><strong>If you delete your account</strong>, your photos and online status are hidden straight away. Until it is permanently deleted, the people you were talking to still see your display name and your conversation with them, read-only, with a note that you deleted your account.</li>
 </ul>
@@ -202,14 +169,16 @@
 <tr><td>Your account, profile, preferences and sign-in record</td><td>Until you delete your account, plus the 30 days you have to undo it; or until 90 days without opening the app on the free tier. Then all of it is permanently deleted.</td></tr>
 <tr><td>A sign-in that never finished creating a profile</td><td>Deleted after 30 days.</td></tr>
 <tr><td>Sign-in sessions</td><td>Until you sign out on that device, or your account is deleted.</td></tr>
-<tr><td>Messages, voice notes, GIFs and reactions</td><td>Until the conversation is deleted: by either of you, for both; after 30 days in which neither of you sends a message; or when either account is permanently deleted. Deleting a message or a conversation “for me” hides it from you only.</td></tr>
+<tr><td>Messages, voice notes, GIFs, photos and reactions</td><td>Until the conversation is deleted: by either of you, for both; after 30 days in which neither of you sends a message; or when either account is permanently deleted. Deleting a message or a conversation “for me” hides it from you only.</td></tr>
 <tr><td>Photo and voice-note files</td><td>Removed from storage within an hour of the photo, message, conversation or account they belong to being deleted.</td></tr>
+<tr><td>Photos sent in a conversation</td><td>The file is deleted 90 days after the photo was sent, or as soon as a timed photo's time is up, and the message stays, saying the photo has expired or was opened. A photo that is not delivered is deleted at once, and one uploaded but never sent is deleted within a day.</td></tr>
 <tr><td>A photo rejected by review</td><td>Deleted at once. Its scores are kept, without the image, while your account exists.</td></tr>
 <tr><td>Safety records: reports, moderation actions and notices</td><td>While the accounts involved exist, so that a pattern across several reports can be seen. Deleted with them.</td></tr>
 <tr><td>Report evidence</td><td>While the report exists, except that the copy of the conversation is deleted one week after the report is dismissed. The record of who opened it is kept with the report.</td></tr>
 <tr><td>Ban fingerprint</td><td>Until the ban is lifted.</td></tr>
 <tr><td>Push tokens</td><td>Until you sign out on that device, or your account is deleted.</td></tr>
 <tr><td>Notification records: which notifications were sent, to whom, and the sender's display name</td><td>While the accounts involved exist.</td></tr>
+<tr><td>Invite records</td><td>While the accounts involved exist.</td></tr>
 <tr><td>Server logs</td><td>Kept by Supabase for no more than 7 days.</td></tr>
 <tr><td>Your emails to us</td><td>As long as we need to deal with your request, and no more than two years.</td></tr>
 </tbody>
@@ -246,33 +215,6 @@
 <h2>15. Contact</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>United States<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>This policy is available in English, Spanish, Portuguese, French and German. If a translation and the English version disagree, the English version applies, to the extent the law allows.</p>
-</article>
-</div>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav aria-label="Legal">
-      <a href="terms.html">Terms of Service</a>
-      <a href="community-guidelines.html">Community Guidelines</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="child-safety.html">Child Safety</a>
-      <a href="delete-account.html">Delete your account</a>
-      <a href="mailto:support@yaproll.app">Contact</a>
-    </nav>
-    <details class="lang-menu lang-menu-up">
-      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
-      <nav class="lang-list" aria-label="Language">
-        <a href="privacy.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="es/privacy.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="pt/privacy.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="fr/privacy.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="de/privacy.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
-  </div>
-</footer>
 </body>
 </html>

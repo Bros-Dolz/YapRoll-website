@@ -1,99 +1,64 @@
 <!doctype html>
+<!--
+  Source of https://yaproll.app/terms.html (phase I2). tool/build_legal_site.py
+  wraps the main element in the site's header and footer. The four
+  translations live in es/, pt/, fr/ and de/ and keep this page's sections,
+  ids, links and numbers; legal_pages_test holds them to it.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms of Service — YapRoll</title>
 <meta name="description" content="The agreement for using YapRoll: who can use it, the main rules, moderation and appeals, the ad-free subscription, deleting your account, and the law that applies.">
-<link rel="canonical" href="https://yaproll.app/terms.html">
-<link rel="alternate" hreflang="en" href="https://yaproll.app/terms.html">
-<link rel="alternate" hreflang="es" href="https://yaproll.app/es/terms.html">
-<link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/terms.html">
-<link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/terms.html">
-<link rel="alternate" hreflang="de" href="https://yaproll.app/de/terms.html">
-<link rel="alternate" hreflang="x-default" href="https://yaproll.app/terms.html">
-<meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js"></script>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0A0E17; background: #F7FFD8; margin: 0; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.1rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; }
+  p, li { margin: .45rem 0; }
+  a { color: #0A5B6B; }
+  .meta { color: #4E5F79; font-size: .85rem; margin-bottom: 1.5rem; }
+  .doc-nav, .lang-nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin-bottom: 1rem; font-size: .9rem; }
+  .lang-nav { margin-bottom: 1.75rem; }
+  .doc-nav a[aria-current], .lang-nav a[aria-current] { font-weight: 700; color: inherit; text-decoration: none; }
+  .callout { border-left: 4px solid #0A0E17; background: #FDFFF0; padding: .8rem 1rem; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem; border-top: 1px solid rgba(10,14,23,.22); }
+  .table-scroll { overflow-x: auto; }
+  kbd { font: .9em ui-monospace, Consolas, monospace; padding: .05em .4em; border: 1px solid rgba(10,14,23,.22); border-radius: 5px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #F7F9FB; background: #0A0E17; }
+    a { color: #37E6FF; }
+    .meta { color: #97A5B8; }
+    .callout { border-left-color: #D4FF00; background: #0E1320; }
+    th, td, kbd { border-color: #212C3F; }
+  }
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav class="nav" aria-label="Site">
-      <a href="index.html#how">How it works</a>
-      <a href="index.html#safety">Safety</a>
-      <a class="nav-keep" href="terms.html" aria-current="page">Legal</a>
-      <details class="lang-menu">
-      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
-      <nav class="lang-list" aria-label="Language">
-        <a href="terms.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="es/terms.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="pt/terms.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="fr/terms.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="de/terms.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-      <button class="theme-toggle" type="button" hidden data-to-light="Switch to light theme" data-to-dark="Switch to dark theme" aria-label="Switch to light theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<main id="main" class="doc">
-<div class="wrap doc-layout">
-<aside class="doc-side">
-  <p class="side-label">Legal pages</p>
-  <nav aria-label="Legal pages">
+<main>
+<nav class="doc-nav" aria-label="Legal pages">
   <a href="terms.html" aria-current="page">Terms of Service</a>
   <a href="community-guidelines.html">Community Guidelines</a>
   <a href="privacy.html">Privacy Policy</a>
   <a href="child-safety.html">Child Safety</a>
   <a href="delete-account.html">Delete your account</a>
-  </nav>
-  <p class="side-label">Language</p>
-  <nav aria-label="Language">
+</nav>
+<nav class="lang-nav" aria-label="Language">
   <a href="terms.html" hreflang="en" lang="en" aria-current="true">English</a>
   <a href="es/terms.html" hreflang="es" lang="es">Español</a>
   <a href="pt/terms.html" hreflang="pt" lang="pt">Português</a>
   <a href="fr/terms.html" hreflang="fr" lang="fr">Français</a>
   <a href="de/terms.html" hreflang="de" lang="de">Deutsch</a>
-  </nav>
-</aside>
-<div class="doc-menus">
-  <details class="doc-menu">
-    <summary>Terms of Service</summary>
-    <nav aria-label="Legal pages">
-  <a href="terms.html" aria-current="page">Terms of Service</a>
-  <a href="community-guidelines.html">Community Guidelines</a>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="child-safety.html">Child Safety</a>
-  <a href="delete-account.html">Delete your account</a>
-    </nav>
-  </details>
-  <details class="doc-menu">
-    <summary>English</summary>
-    <nav aria-label="Language">
-  <a href="terms.html" hreflang="en" lang="en" aria-current="true">English</a>
-  <a href="es/terms.html" hreflang="es" lang="es">Español</a>
-  <a href="pt/terms.html" hreflang="pt" lang="pt">Português</a>
-  <a href="fr/terms.html" hreflang="fr" lang="fr">Français</a>
-  <a href="de/terms.html" hreflang="de" lang="de">Deutsch</a>
-    </nav>
-  </details>
-</div>
-<article class="prose">
+</nav>
+
 <h1>Terms of Service</h1>
-<p class="meta">YapRoll · Effective 1 October 2026</p>
+<p class="meta">YapRoll · Effective 15 November 2026</p>
 
 <div class="callout">
-<p><strong>What changed in this version.</strong> We rewrote these terms from scratch. They now name the company behind YapRoll and cover the App Store as well as Google Play. The rules have moved to a page of their own, the <a href="community-guidelines.html">Community Guidelines</a>. Every moderation decision now comes with its reason and can be appealed, and New York law applies.</p>
+<p><strong>What changed in this version.</strong> Section 9 now covers YapRoll Plus, with its free trial, and invites. Sections 2, 4 and 7 now cover the photos you can send in a conversation.</p>
 </div>
 
 <p>These terms are an agreement between you and <strong>Bros Dolz LLC</strong>, a New York limited liability company at 418 Broadway STE N, Albany, NY 12207, United States (“YapRoll”, “we”, “us”). They cover the YapRoll app on Android and iPhone and the website at yaproll.app.</p>
@@ -110,11 +75,11 @@
 </ul>
 
 <h2>2. What YapRoll is</h2>
-<p>YapRoll pairs you with another person who is online and matches your search preferences, and turns that pairing into a conversation of text, voice notes, GIFs and reactions. Your preferences work both ways: the age range, sexes, languages and regions you choose also decide who can be paired with you.</p>
+<p>YapRoll pairs you with another person who is online and matches your search preferences, and turns that pairing into a conversation of text, voice notes, GIFs, photos and reactions. Photos can be sent only once the other person allows them, and they see a photo only after it passes an automated check. Your preferences work both ways: the age range, sexes, languages and regions you choose also decide who can be paired with you.</p>
 <p>We do not check anybody's identity. The people you meet are strangers, and you should treat them that way. What they tell you about themselves may not be true. If you decide to meet somebody in person, that is your decision and your responsibility; the <a href="community-guidelines.html#safety">safety tips</a> in the Community Guidelines are worth reading first.</p>
 
 <h2>3. The main rules</h2>
-<p>The full rules, with examples, are in the <a href="community-guidelines.html">Community Guidelines</a>. These are the ones that matter most. They apply to everything you send, post or show on YapRoll: messages, voice notes, GIFs, reactions, your display name, your profile and your photos.</p>
+<p>The full rules, with examples, are in the <a href="community-guidelines.html">Community Guidelines</a>. These are the ones that matter most. They apply to everything you send, post or show on YapRoll: messages, voice notes, GIFs, photos, reactions, your display name, your profile and your photos.</p>
 <ul>
 <li><strong>Zero tolerance for anything that sexualises or endangers a child.</strong> We remove it, ban every account involved without warning or appeal, and report it to the relevant authorities, including the National Center for Missing &amp; Exploited Children. See our <a href="child-safety.html">Child Safety Standards</a>.</li>
 <li><strong>No inappropriate content:</strong> no nudity or sexual content, no violence or gore, no hate speech, and nothing that promotes self-harm, suicide or eating disorders.</li>
@@ -129,6 +94,7 @@
 <p><strong>Report and block.</strong> Every conversation has a Report button and a Block button. A person you block cannot reach you again and is not told that you blocked them. When you report a conversation, a copy of its last 20 text messages and GIFs is attached to the report, frozen at that moment, so a moderator can see what happened even if the messages are deleted afterwards.</p>
 <p><strong>We review every report within 24 hours</strong>, and a person makes the decision every time.</p>
 <p><strong>Photos are checked before anybody sees them.</strong> Every profile photo goes through an automated check first. Photos that are clearly fine go up, and photos that clearly break the rules are removed. If the check is not sure either way, the photo waits for a moderator. Photos that keep getting removed lead to the steps in the <a href="community-guidelines.html#enforcement">Community Guidelines</a>, ending with a review of the account by a moderator.</p>
+<p><strong>Photos in a conversation are checked too.</strong> Each one goes through the same automated check before the other person sees it. A photo that clearly shows sexual content or graphic violence is not delivered, and each one counts: the first brings a warning, the second a 7-day suspension, the third a ban. A photo that shows self-harm is not delivered either, but it does not count.</p>
 <p><strong>What we can do.</strong> Depending on how serious a breach is, we may remove content, warn you, suspend your account for a period, or ban it. A suspended or banned account cannot search for new people or send messages, and other people cannot send messages to it; it can still read its existing conversations. We may act on reports, on the automated photo check, or on our own findings.</p>
 <p><strong>You will always be told why.</strong> Every action we take on your account appears in the app under <strong>Settings › Account notices</strong>, with the rule it was taken under and, for a suspension, when it ends.</p>
 
@@ -147,22 +113,25 @@
 <p>You are responsible for what you send. Only share things you have the right to share. We may remove anything that breaks these terms or the Community Guidelines, and we are not obliged to keep any of your content for you.</p>
 
 <h2>7. What happens to your conversations outside the app</h2>
-<p>Conversations on YapRoll are between you and the other person. <strong>You may not share a conversation, or any part of it (messages, voice notes, photos or screenshots), outside YapRoll without the other person's consent.</strong> We also ask you not to take screenshots or recordings of conversations at all.</p>
+<p>Conversations on YapRoll are between you and the other person. <strong>You may not share a conversation, or any part of it (messages, voice notes, photos or screenshots), outside YapRoll without the other person's consent.</strong> We also ask you not to take screenshots or recordings of conversations at all. While a timed photo is open, the app blocks screenshots on Android, but nothing can stop a photo of the screen taken with another device.</p>
 <p>But we cannot stop the other person from doing so. YapRoll and Bros Dolz LLC are not responsible for what anybody does with a conversation, or with anything you sent, once it leaves the app. Keep that in mind before you send something you would not want seen elsewhere. If somebody shares your conversation without your consent, report them.</p>
 
 <h2>8. GIFs and other services inside YapRoll</h2>
 <p>The GIFs in YapRoll come from <strong>KLIPY</strong>, a separate company. We do not make or control them, and we cannot promise that every GIF is accurate or suitable. When you send a GIF you are responsible for it, exactly as if it were your own message, and the Community Guidelines apply to it.</p>
 <p>Ads on the free tier are served by Google, and payments are handled by Google Play or the App Store. Each of these services has its own terms, and we are not responsible for them.</p>
 
-<h2>9. Ads and the ad-free subscription</h2>
+<h2>9. Ads, subscriptions and invites</h2>
 <ul>
 <li><strong>The free tier shows ads.</strong> Where the law requires it, we ask for your consent before ads are personalised. You can change your choice at any time under <strong>Settings › Ad preferences</strong>.</li>
-<li><strong>The ad-free subscription</strong> removes ads everywhere in the app. It is sold through Google Play on Android and the App Store on iPhone, as a monthly or an annual plan. The price, in your currency, is shown in the store before you buy. There is no free trial.</li>
+<li><strong>There are two subscriptions.</strong> No Ads removes ads everywhere in the app. YapRoll Plus removes them too, and adds the features listed on its page in the app, such as HD photos and hiding when you are online. Both are sold through Google Play on Android and the App Store on iPhone, as a monthly or an annual plan, and the price, in your currency, is shown in the store before you buy.</li>
+<li><strong>Free trial.</strong> YapRoll Plus can start with a free trial if the store offers you one: 3 days on the monthly plan and 7 days on the annual one. Unless you cancel at least 24 hours before the trial ends, it becomes a paid subscription and you are charged then. The store decides who can have a trial, usually once per account.</li>
 <li><strong>It renews automatically</strong> at the end of each period, at the then-current price, until you cancel. Payment is taken by Google Play or Apple when you confirm the purchase and at each renewal. To avoid being charged for the next period, cancel at least 24 hours before the current one ends.</li>
+<li><strong>Moving from No Ads to YapRoll Plus</strong> replaces your No Ads subscription. Google Play or Apple counts the time you had already paid for towards the new plan.</li>
 <li><strong>Cancel in the store.</strong> Cancellation, payment and billing are handled by Google Play or Apple under their own terms. <strong>Settings › Manage subscription</strong> takes you to the right page. Deleting the app, or your YapRoll account, does not cancel the subscription.</li>
 <li><strong>No refunds from us.</strong> We do not give refunds, including for partly used periods. Any refund is a matter for Google Play or Apple under their refund policies, and you ask them for it directly.</li>
 <li><strong>If your account is suspended or banned</strong>, your subscription is not cancelled for you and is not refunded. Cancel it in the store if you no longer want it.</li>
 <li>A subscription does not exempt you from these terms or from moderation. It does exempt your account from deletion for inactivity (see section 10).</li>
+<li><strong>Invites.</strong> You can invite people with your invite code. When somebody signs up with it and opens YapRoll on 3 different days in their first 14 days, you each get 7 days of YapRoll Plus. You can earn this up to 10 times a month. Plus from invites starts after any Plus you pay for has ended. It has no cash value and cannot be sold or transferred, and we may withhold it, or take it back, if invites are abused, for example with accounts made only to collect rewards.</li>
 </ul>
 
 <h2>10. Deleting your account</h2>
@@ -241,33 +210,6 @@
 <h2>20. Contact</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>United States<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>This email address is also our single point of contact for users and for authorities in the European Union under the Digital Services Act. Please write to us in English.</p>
-</article>
-</div>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav aria-label="Legal">
-      <a href="terms.html">Terms of Service</a>
-      <a href="community-guidelines.html">Community Guidelines</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="child-safety.html">Child Safety</a>
-      <a href="delete-account.html">Delete your account</a>
-      <a href="mailto:support@yaproll.app">Contact</a>
-    </nav>
-    <details class="lang-menu lang-menu-up">
-      <summary title="Language"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt=""><span class="sr-only">Language: English</span></summary>
-      <nav class="lang-list" aria-label="Language">
-        <a href="terms.html" hreflang="en" lang="en" aria-current="true"><img class="flag" src="assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="es/terms.html" hreflang="es" lang="es"><img class="flag" src="assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="pt/terms.html" hreflang="pt" lang="pt"><img class="flag" src="assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="fr/terms.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="de/terms.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll is for adults 18 and over. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
-  </div>
-</footer>
 </body>
 </html>

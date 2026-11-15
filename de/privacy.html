@@ -5,95 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datenschutzerklärung — YapRoll</title>
 <meta name="description" content="Was YapRoll erhebt, warum, wer die Daten sonst noch verarbeitet, wie lange sie gespeichert werden und welche Rechte alle an ihren Daten haben, egal wo sie leben.">
-<link rel="canonical" href="https://yaproll.app/de/privacy.html">
-<link rel="alternate" hreflang="en" href="https://yaproll.app/privacy.html">
-<link rel="alternate" hreflang="es" href="https://yaproll.app/es/privacy.html">
-<link rel="alternate" hreflang="pt" href="https://yaproll.app/pt/privacy.html">
-<link rel="alternate" hreflang="fr" href="https://yaproll.app/fr/privacy.html">
-<link rel="alternate" hreflang="de" href="https://yaproll.app/de/privacy.html">
-<link rel="alternate" hreflang="x-default" href="https://yaproll.app/privacy.html">
-<meta name="theme-color" content="#0A0E17" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F7FFD8" media="(prefers-color-scheme: light)">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/site.css">
-<script src="../assets/site.js"></script>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0A0E17; background: #F7FFD8; margin: 0; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.1rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; }
+  p, li { margin: .45rem 0; }
+  a { color: #0A5B6B; }
+  .meta { color: #4E5F79; font-size: .85rem; margin-bottom: 1.5rem; }
+  .doc-nav, .lang-nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin-bottom: 1rem; font-size: .9rem; }
+  .lang-nav { margin-bottom: 1.75rem; }
+  .doc-nav a[aria-current], .lang-nav a[aria-current] { font-weight: 700; color: inherit; text-decoration: none; }
+  .callout { border-left: 4px solid #0A0E17; background: #FDFFF0; padding: .8rem 1rem; margin: 1.25rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem; border-top: 1px solid rgba(10,14,23,.22); }
+  .table-scroll { overflow-x: auto; }
+  kbd { font: .9em ui-monospace, Consolas, monospace; padding: .05em .4em; border: 1px solid rgba(10,14,23,.22); border-radius: 5px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #F7F9FB; background: #0A0E17; }
+    a { color: #37E6FF; }
+    .meta { color: #97A5B8; }
+    .callout { border-left-color: #D4FF00; background: #0E1320; }
+    th, td, kbd { border-color: #212C3F; }
+  }
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav class="nav" aria-label="Site">
-      <a href="index.html#how">So funktioniert's</a>
-      <a href="index.html#safety">Sicherheit</a>
-      <a class="nav-keep" href="terms.html" aria-current="page">Rechtliches</a>
-      <details class="lang-menu">
-      <summary title="Sprache"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt=""><span class="sr-only">Sprache: Deutsch</span></summary>
-      <nav class="lang-list" aria-label="Sprache">
-        <a href="../privacy.html" hreflang="en" lang="en"><img class="flag" src="../assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="../es/privacy.html" hreflang="es" lang="es"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="../pt/privacy.html" hreflang="pt" lang="pt"><img class="flag" src="../assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="../fr/privacy.html" hreflang="fr" lang="fr"><img class="flag" src="../assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="privacy.html" hreflang="de" lang="de" aria-current="true"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-      <button class="theme-toggle" type="button" hidden data-to-light="Zum hellen Design wechseln" data-to-dark="Zum dunklen Design wechseln" aria-label="Zum hellen Design wechseln">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<main id="main" class="doc">
-<div class="wrap doc-layout">
-<aside class="doc-side">
-  <p class="side-label">Rechtliche Seiten</p>
-  <nav aria-label="Rechtliche Seiten">
+<main>
+<nav class="doc-nav" aria-label="Rechtliche Seiten">
   <a href="terms.html">Nutzungsbedingungen</a>
   <a href="community-guidelines.html">Gemeinschaftsrichtlinien</a>
   <a href="privacy.html" aria-current="page">Datenschutzerklärung</a>
   <a href="child-safety.html">Kinderschutz</a>
   <a href="delete-account.html">Dein Konto löschen</a>
-  </nav>
-  <p class="side-label">Sprache</p>
-  <nav aria-label="Sprache">
+</nav>
+<nav class="lang-nav" aria-label="Sprache">
   <a href="../privacy.html" hreflang="en" lang="en">English</a>
   <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
   <a href="../pt/privacy.html" hreflang="pt" lang="pt">Português</a>
   <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a>
   <a href="privacy.html" hreflang="de" lang="de" aria-current="true">Deutsch</a>
-  </nav>
-</aside>
-<div class="doc-menus">
-  <details class="doc-menu">
-    <summary>Datenschutzerklärung</summary>
-    <nav aria-label="Rechtliche Seiten">
-  <a href="terms.html">Nutzungsbedingungen</a>
-  <a href="community-guidelines.html">Gemeinschaftsrichtlinien</a>
-  <a href="privacy.html" aria-current="page">Datenschutzerklärung</a>
-  <a href="child-safety.html">Kinderschutz</a>
-  <a href="delete-account.html">Dein Konto löschen</a>
-    </nav>
-  </details>
-  <details class="doc-menu">
-    <summary>Deutsch</summary>
-    <nav aria-label="Sprache">
-  <a href="../privacy.html" hreflang="en" lang="en">English</a>
-  <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
-  <a href="../pt/privacy.html" hreflang="pt" lang="pt">Português</a>
-  <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a>
-  <a href="privacy.html" hreflang="de" lang="de" aria-current="true">Deutsch</a>
-    </nav>
-  </details>
-</div>
-<article class="prose">
+</nav>
+
 <h1>Datenschutzerklärung</h1>
-<p class="meta">YapRoll · Gültig ab 5. Oktober 2026</p>
+<p class="meta">YapRoll · Gültig ab 15. November 2026</p>
 
 <div class="callout">
-<p><strong>Was sich in dieser Version geändert hat.</strong> Diese Version nennt das Unternehmen hinter YapRoll und gibt allen die Datenschutzrechte der DSGVO und des kalifornischen Rechts, egal wo sie leben. Sie deckt außerdem vieles ab, was die alte Erklärung ausgelassen hat, von deinem Anmeldedatensatz, Reaktionen, Bearbeitungen, Antworten und GIFs bis zur Tippanzeige, Sitzungs- und Serverprotokollen, der iPhone-App, der Website, sensiblen Informationen und dem Fingerabdruck, der von einem dauerhaft gesperrten Konto aufbewahrt wird. Und wenn du dein Konto löschst, wird jetzt auch dein Anmeldedatensatz gelöscht.</p>
+<p><strong>Was sich in dieser Version geändert hat.</strong> Diese Version deckt ab, was die App im November 2026 dazubekommen hat. YapRoll Plus und Einladungen speichern ein paar eigene Daten, die in Abschnitt 2 stehen. Fotos, die du in einer Unterhaltung sendest, werden geprüft, bevor die andere Person sie sieht (Abschnitt 4), und spätestens nach 90 Tagen gelöscht (Abschnitt 9).</p>
 </div>
 
 <p>YapRoll ist eine Chat-App für Erwachsene. Du tippst auf Suchen, wirst mit einer anderen Person zusammengebracht, die gerade erreichbar ist und zu deinen Präferenzen passt, und aus dieser Begegnung wird eine Unterhaltung. Diese Erklärung beschreibt, was YapRoll dafür erhebt, warum, wer die Daten sonst noch verarbeitet, wie lange sie gespeichert werden und was du dagegen tun kannst.</p>
@@ -113,8 +72,8 @@
 <tr><td><strong>Anmeldesitzungen</strong></td><td>Für jedes Gerät, auf dem du angemeldet bist: seine IP-Adresse und eine Beschreibung der App oder des Browsers.</td><td>Um dich angemeldet zu halten und dein Konto zu schützen.</td></tr>
 <tr><td><strong>Dein Profil</strong></td><td>Der Anzeigename, den du wählst, dein Geburtsdatum, dein Geschlecht, was du suchst (nur quatschen, Freundschaft oder etwas mehr), deine Region, die Sprachen, die du sprichst, und die Fotos, die du hinzufügst.</td><td>Dein Geburtsdatum bestätigt, dass du 18 Jahre oder älter bist, und wird nie angezeigt; dein Alter schon. Alles andere wird den Menschen gezeigt, mit denen du zusammengebracht wirst, und dafür verwendet, dich zusammenzubringen.</td></tr>
 <tr><td><strong>Suchpräferenzen</strong></td><td>Die Altersspanne, die Geschlechter, die Sprachen und die Regionen, mit denen du zusammengebracht werden möchtest.</td><td>Um auszuwählen, mit wem du zusammengebracht wirst. Sie bestimmen auch, wer mit dir zusammengebracht werden kann.</td></tr>
-<tr><td><strong>Nachrichten</strong></td><td>Die Textnachrichten, Sprachnachrichten (mit Länge und Wellenform) und GIFs, die du sendest und empfängst; Antworten, die ein kurzes Zitat der beantworteten Nachricht enthalten; Reaktionen; wann eine Nachricht bearbeitet wurde; und wann jede Nachricht gesendet, zugestellt und gelesen wurde.</td><td>Um sie zuzustellen und euch beiden die Unterhaltung anzuzeigen.</td></tr>
-<tr><td><strong>Einstellungen für Unterhaltungen</strong></td><td>Welche Unterhaltungen du angeheftet, archiviert, stummgeschaltet oder gelöscht hast und welche Nachrichten du für dich gelöscht hast.</td><td>Um deine Unterhaltungen so anzuzeigen, wie du sie geordnet hast.</td></tr>
+<tr><td><strong>Nachrichten</strong></td><td>Die Textnachrichten, Sprachnachrichten (mit Länge und Wellenform), GIFs und Fotos, die du sendest und empfängst; Antworten, die ein kurzes Zitat der beantworteten Nachricht enthalten; Reaktionen; wann eine Nachricht bearbeitet wurde; und wann jede Nachricht gesendet, zugestellt und gelesen wurde. Bei einem Foto außerdem seine Größe, der Timer, mit dem es gesendet wurde, wann es geöffnet wurde, und ein Vorschaubild von wenigen Pixeln, aus dem die verschwommene Kachel eines Fotos mit Timer gezeichnet wird. Die App sendet nur das Bild, verkleinert und ohne Standort- oder Kameradaten. Auch eine Anfrage, Fotos senden zu dürfen, ist eine Nachricht.</td><td>Um sie zuzustellen und euch beiden die Unterhaltung anzuzeigen.</td></tr>
+<tr><td><strong>Einstellungen für Unterhaltungen</strong></td><td>Welche Unterhaltungen du angeheftet, archiviert, stummgeschaltet oder gelöscht hast, welche Nachrichten du für dich gelöscht hast und ob du der anderen Person erlaubst, dir Fotos zu senden.</td><td>Um deine Unterhaltungen so anzuzeigen, wie du sie geordnet hast.</td></tr>
 <tr><td><strong>Tippen</strong></td><td>Dass du gerade tippst.</td><td>Wird live an die andere Person in der Unterhaltung gesendet, damit sie „Schreibt …“ sieht. Es wird nicht gespeichert.</td></tr>
 <tr><td><strong>Anwesenheit</strong></td><td>Ob die App geöffnet ist und wann sie zuletzt geöffnet war.</td><td>Um dich mit Menschen zusammenzubringen, die wirklich erreichbar sind, und um „Erreichbar“ oder „Zuletzt …“ anzuzeigen.</td></tr>
 <tr><td><strong>Dein Gerät</strong></td><td>Ein Push-Token, das für diese Installation ausgestellt wurde, ob es ein Android-Gerät oder ein iPhone ist, die eingestellte Sprache der App und die Build-Nummer der App.</td><td>Um dir eine Benachrichtigung über eine neue Nachricht oder Reaktion in deiner Sprache zu senden, während die App geschlossen ist, und um veraltete App-Versionen zur Aktualisierung aufzufordern.</td></tr>
@@ -122,8 +81,9 @@
 <tr><td><strong>Sicherheitsaufzeichnungen</strong></td><td>Die Personen, die du blockierst; die Meldungen, die du machst (der Grund und eine eventuelle Notiz), und alle Meldungen über dich; die Moderationsmaßnahmen für dein Konto und die Hinweise, die du erhältst.</td><td>Um blockierte Personen fernzuhalten, Meldungen zu bearbeiten und dich zu informieren, wenn Maßnahmen für dein Konto getroffen werden.</td></tr>
 <tr><td><strong>Beweise zu Meldungen</strong></td><td>Wenn eine Unterhaltung gemeldet wird, eine Kopie ihrer letzten 20 Textnachrichten und GIFs, eingefroren in diesem Moment, und ein Protokoll jedes Mal, wenn ein Moderator diese Kopie öffnet.</td><td>Damit ein Moderator sehen kann, was gemeldet wurde, auch wenn die Nachrichten später gelöscht werden. Sprachnachrichten und Fotos werden nicht kopiert. Das Protokoll, wer die Kopie geöffnet hat, macht Moderatoren rechenschaftspflichtig.</td></tr>
 <tr><td><strong>Sperr-Fingerabdruck</strong></td><td>Wenn dein Konto dauerhaft gesperrt wird: ein kryptografischer Einweg-Fingerabdruck der ID deines Anmeldekontos. Er lässt sich nicht in deine E-Mail-Adresse oder ID zurückverwandeln.</td><td>Damit eine gesperrte Person die Sperre nicht umgehen kann, indem sie das Konto löscht und sich neu registriert.</td></tr>
-<tr><td><strong>Fotoprüfung</strong></td><td>Für jedes Profilfoto die Werte, die die automatische Prüfung geliefert hat, und die Entscheidung des Moderators, falls ein Mensch es geprüft hat.</td><td>Um zu entscheiden, ob ein Foto angezeigt werden darf (siehe Abschnitt 4).</td></tr>
-<tr><td><strong>Abo</strong></td><td>Wenn du das werbefreie Abo kaufst: das Kauf-Token, der Tarif, sein Status und Ablaufdatum, ob es sich verlängert, und der Kaufdatensatz, den Google Play oder Apple zurückgeben.</td><td>Um zu wissen, dass du auf allen Geräten und nach einer Neuinstallation ein Abo hast. Deine Karten- oder Zahlungsdaten sehen wir nie.</td></tr>
+<tr><td><strong>Fotoprüfung</strong></td><td>Für jedes Profilfoto und jedes Foto, das du in einer Unterhaltung sendest, die Werte, die die automatische Prüfung geliefert hat, und die Entscheidung des Moderators, falls ein Mensch es geprüft hat.</td><td>Um zu entscheiden, ob ein Foto angezeigt oder zugestellt werden darf (siehe Abschnitt 4).</td></tr>
+<tr><td><strong>Abo</strong></td><td>Wenn du Werbefrei oder YapRoll Plus kaufst oder einen kostenlosen Testzeitraum beginnst: das Kauf-Token, der Tarif, sein Status und Ablaufdatum, ob es sich verlängert, und der Kaufdatensatz, den Google Play oder Apple zurückgeben. Bei YapRoll Plus außerdem, was du in seinen Einstellungen wählst, zum Beispiel ob andere sehen, wann du erreichbar bist.</td><td>Um zu wissen, dass du auf allen Geräten und nach einer Neuinstallation ein Abo hast, und um deine Auswahl anzuwenden. Deine Karten- oder Zahlungsdaten sehen wir nie.</td></tr>
+<tr><td><strong>Einladungen</strong></td><td>Dein Einladungscode; wer sich damit angemeldet hat; an welchen Tagen ein neues Konto die App in seinen ersten 14 Tagen geöffnet hat; und die Tage YapRoll Plus, die jede Einladung eingebracht hat.</td><td>Um euch beiden die Belohnung zu geben, sobald sie verdient ist, und um Missbrauch von Einladungen zu verhindern.</td></tr>
 <tr><td><strong>Werbung</strong></td><td>In der kostenlosen Version erhebt Google AdMob die Werbe-ID deines Geräts, deine IP-Adresse und den ungefähren Standort, den sie verrät, Informationen über dein Gerät und wie du mit Werbung interagierst.</td><td>Um Werbung anzuzeigen und sie, nur wenn du es erlaubst, zu personalisieren (siehe Abschnitt 5).</td></tr>
 <tr><td><strong>Serverprotokolle</strong></td><td>Die IP-Adresse und die Uhrzeit jeder Anfrage, die die App an unsere Server stellt.</td><td>Um den Dienst am Laufen und sicher zu halten und um Probleme und Missbrauch zu untersuchen.</td></tr>
 <tr><td><strong>Deine E-Mails an uns</strong></td><td>Alles, was du an support@yaproll.app schreibst, und deine E-Mail-Adresse.</td><td>Um dir zu antworten.</td></tr>
@@ -142,7 +102,7 @@
 <table>
 <thead><tr><th>Zweck</th><th>Rechtsgrundlage</th></tr></thead>
 <tbody>
-<tr><td>Dein Konto erstellen, dich mit Menschen zusammenbringen, deine Nachrichten und Benachrichtigungen zustellen, dein Profil anzeigen, das Abo bereitstellen</td><td>Erbringung des Dienstes, für den du dich angemeldet hast (Vertrag)</td></tr>
+<tr><td>Dein Konto erstellen, dich mit Menschen zusammenbringen, deine Nachrichten, Fotos und Benachrichtigungen zustellen, dein Profil anzeigen, die Abos und Einladungsbelohnungen bereitstellen</td><td>Erbringung des Dienstes, für den du dich angemeldet hast (Vertrag)</td></tr>
 <tr><td>Verwenden, was dein Profil und deine Präferenzen über dein Sexualleben oder deine Orientierung verraten, um dich zusammenzubringen</td><td>Deine ausdrückliche Einwilligung, die du gibst, wenn du in der App auf „Ich stimme zu“ tippst; du widerrufst sie, indem du dein Konto löschst</td></tr>
 <tr><td>Fotos prüfen, Meldungen bearbeiten, Sicherheitsaufzeichnungen und den Sperr-Fingerabdruck aufbewahren, Spam und Missbrauch verhindern, den Dienst sicher halten</td><td>Unser berechtigtes Interesse, und deins, an einem sicheren Dienst</td></tr>
 <tr><td>Personalisierte Werbung</td><td>Deine Einwilligung, die du jederzeit unter Einstellungen › Werbeeinstellungen widerrufen kannst</td></tr>
@@ -154,7 +114,8 @@
 
 <h2>4. Automatische Fotoprüfung</h2>
 <p>Jedes Profilfoto, das du hinzufügst, wird automatisch geprüft, bevor jemand anderes es sehen kann. Das Foto wird an den Moderationsdienst von OpenAI gesendet, der Werte für sexuelle, gewalttätige und selbstverletzende Inhalte liefert. Fotos mit eindeutig niedrigen Werten werden angezeigt, und Fotos mit eindeutig hohen Werten werden entfernt. Alles dazwischen wartet auf einen Moderator.</p>
-<p>Ein entferntes Foto zählt gegen dein Konto, und mehrere davon führen automatisch zu einer Verwarnung und dann zu vorübergehenden Sperren, wie in den <a href="community-guidelines.html#enforcement">Gemeinschaftsrichtlinien</a> festgelegt. Weil diese Entscheidungen ohne einen Menschen getroffen werden können, <strong>hast du immer das Recht, sie von einem Menschen prüfen zu lassen</strong>: Lege Einspruch ein, wie in Abschnitt 5 der <a href="terms.html">Nutzungsbedingungen</a> beschrieben.</p>
+<p>Ein Foto, das du in einer Unterhaltung sendest, durchläuft dieselbe Prüfung, bevor die andere Person es sieht. Zeigt es eindeutig sexuelle Inhalte oder drastische Gewalt, wird es nicht zugestellt und zählt gegen dein Konto. Zeigt es Selbstverletzung, wird es ebenfalls nicht zugestellt, zählt aber nicht, und die App zeigt dir, wo du Hilfe findest. Alles andere wird zugestellt. Moderatoren sehen die Fotos, die du in einer Unterhaltung sendest, nicht, auch nicht, wenn die Unterhaltung gemeldet wird.</p>
+<p>Jedes Foto, das die Prüfung entfernt, zählt gegen dein Konto, außer einem in einer Unterhaltung gesendeten Foto, das Selbstverletzung zeigte. Mehrere davon führen automatisch zu einer Verwarnung und dann zu vorübergehenden Sperren, und in Unterhaltungen abgelehnte Fotos können zu einer dauerhaften Sperre führen, wie in den <a href="community-guidelines.html#enforcement">Gemeinschaftsrichtlinien</a> festgelegt. Weil diese Entscheidungen ohne einen Menschen getroffen werden können, <strong>hast du immer das Recht, sie von einem Menschen prüfen zu lassen</strong>: Lege Einspruch ein, wie in Abschnitt 5 der <a href="terms.html">Nutzungsbedingungen</a> beschrieben.</p>
 <p>Keine andere Entscheidung über dich wird automatisch getroffen. Das Zusammenbringen wählt unter den Menschen aus, die zu den Präferenzen beider Seiten passen, ohne jedes Profiling.</p>
 
 <h2>5. Werbung</h2>
@@ -170,7 +131,7 @@
 <tr><td><strong>Supabase</strong> (USA)</td><td>Hostet unsere Datenbank, die Fotos und Sprachnachrichten und unseren Servercode. Fast alles aus Abschnitt 2 wird hier gespeichert.</td></tr>
 <tr><td><strong>Google</strong></td><td>Google Sign-In (dein Konto), Firebase Cloud Messaging (Benachrichtigungen), Google Play Billing (Abos auf Android) und Google AdMob (Werbung in der kostenlosen Version).</td></tr>
 <tr><td><strong>Apple</strong></td><td>Auf dem iPhone: Mit Apple anmelden, Käufe im App Store und der Apple Push Notification Service, der Benachrichtigungen zustellt.</td></tr>
-<tr><td><strong>OpenAI</strong></td><td>Prüft jedes Profilfoto (Abschnitt 4). OpenAI verwendet das Foto nicht zum Training seiner Modelle und gibt an, dass sein Moderationsdienst es nach der Prüfung nicht speichert.</td></tr>
+<tr><td><strong>OpenAI</strong></td><td>Prüft jedes Profilfoto und jedes in einer Unterhaltung gesendete Foto (Abschnitt 4). OpenAI verwendet das Foto nicht zum Training seiner Modelle und gibt an, dass sein Moderationsdienst es nach der Prüfung nicht speichert.</td></tr>
 <tr><td><strong>KLIPY</strong></td><td>Liefert die GIFs. Deine GIF-Suchen gelangen über unseren Server zu KLIPY, nie zusammen mit deinem Konto; KLIPY sieht nur einen anonymen Code, der daraus abgeleitet wird. Die GIFs selbst, im GIF-Bereich und in Unterhaltungen, werden direkt von den Servern von KLIPY geladen, die die IP-Adresse deines Geräts sehen, wie jede Website.</td></tr>
 <tr><td><strong>GitHub</strong></td><td>Hostet die Website yaproll.app und sieht die IP-Adresse aller, die sie besuchen.</td></tr>
 <tr><td><strong>Cloudflare</strong></td><td>Liefert die Website von GitHub an deinen Browser aus und sieht die IP-Adresse aller, die sie besuchen.</td></tr>
@@ -184,9 +145,9 @@
 
 <h2>7. Wer was sehen kann</h2>
 <ul>
-<li><strong>Dein Profil</strong>, also dein Anzeigename, dein Alter, dein Geschlecht, was du suchst, deine Region, deine Sprachen, deine freigegebenen Fotos und ob du erreichbar bist, ist nur für die Menschen sichtbar, mit denen du zusammengebracht wirst. Fremde können dich nicht suchen, und es gibt kein öffentliches Profil.</li>
-<li><strong>Deine Nachrichten</strong> sieht die andere Person in der Unterhaltung. Nachrichten sind nicht Ende-zu-Ende-verschlüsselt: Sie werden auf unseren Servern gespeichert, damit sie auf die Geräte der anderen Person zugestellt und gemeldete Unterhaltungen geprüft werden können.</li>
-<li><strong>Moderatoren</strong> können Meldungen, die beigefügten Beweise, Fotos, die auf ihre Prüfung warten, und den Moderationsverlauf deines Kontos sehen. Ansonsten können sie deine Unterhaltungen nicht lesen, und jedes Mal, wenn sie Beweise zu einer Meldung öffnen, wird das protokolliert.</li>
+<li><strong>Dein Profil</strong>, also dein Anzeigename, dein Alter, dein Geschlecht, was du suchst, deine Region, deine Sprachen, deine freigegebenen Fotos und ob du erreichbar bist, ist nur für die Menschen sichtbar, mit denen du zusammengebracht wirst. Mit YapRoll Plus kannst du auch vor ihnen verbergen, wann du erreichbar bist. Fremde können dich nicht suchen, und es gibt kein öffentliches Profil.</li>
+<li><strong>Deine Nachrichten</strong> sieht die andere Person in der Unterhaltung. Nachrichten sind nicht Ende-zu-Ende-verschlüsselt: Sie werden auf unseren Servern gespeichert, damit sie auf die Geräte der anderen Person zugestellt und gemeldete Unterhaltungen geprüft werden können. Ein Foto, das du sendest, sieht nur die andere Person. Ein Foto mit Timer kann geöffnet werden, solange der Timer läuft, und wird danach für euch beide gelöscht. Solange es offen ist, blockiert die App unter Android Screenshots, aber niemand kann verhindern, dass jemand den Bildschirm mit einem anderen Handy fotografiert.</li>
+<li><strong>Moderatoren</strong> können Meldungen, die beigefügten Beweise, Profilfotos, die auf ihre Prüfung warten, und den Moderationsverlauf deines Kontos sehen. Ansonsten können sie deine Unterhaltungen nicht lesen, und jedes Mal, wenn sie Beweise zu einer Meldung öffnen, wird das protokolliert. Fotos, die in einer Unterhaltung gesendet werden, sehen sie nie.</li>
 <li>Eine Person, die du blockierst, erfährt nicht, dass du sie blockiert hast.</li>
 <li><strong>Wenn du dein Konto löschst</strong>, werden deine Fotos und dein Online-Status sofort ausgeblendet. Bis es endgültig gelöscht ist, sehen die Menschen, mit denen du geschrieben hast, weiterhin deinen Anzeigenamen und eure Unterhaltung, schreibgeschützt, mit einem Hinweis, dass du dein Konto gelöscht hast.</li>
 </ul>
@@ -202,14 +163,16 @@
 <tr><td>Dein Konto, Profil, deine Präferenzen und dein Anmeldedatensatz</td><td>Bis du dein Konto löschst, plus die 30 Tage, in denen du das rückgängig machen kannst; oder bis 90 Tage vergangen sind, ohne dass du die App in der kostenlosen Version geöffnet hast. Danach wird alles endgültig gelöscht.</td></tr>
 <tr><td>Eine Anmeldung, aus der nie ein Profil entstanden ist</td><td>Wird nach 30 Tagen gelöscht.</td></tr>
 <tr><td>Anmeldesitzungen</td><td>Bis du dich auf diesem Gerät abmeldest oder dein Konto gelöscht wird.</td></tr>
-<tr><td>Nachrichten, Sprachnachrichten, GIFs und Reaktionen</td><td>Bis die Unterhaltung gelöscht wird: von einem von euch, für beide; nach 30 Tagen, in denen keiner von euch eine Nachricht sendet; oder wenn eines der beiden Konten endgültig gelöscht wird. Eine Nachricht oder Unterhaltung „für mich“ zu löschen, blendet sie nur für dich aus.</td></tr>
+<tr><td>Nachrichten, Sprachnachrichten, GIFs, Fotos und Reaktionen</td><td>Bis die Unterhaltung gelöscht wird: von einem von euch, für beide; nach 30 Tagen, in denen keiner von euch eine Nachricht sendet; oder wenn eines der beiden Konten endgültig gelöscht wird. Eine Nachricht oder Unterhaltung „für mich“ zu löschen, blendet sie nur für dich aus.</td></tr>
 <tr><td>Foto- und Sprachnachrichtendateien</td><td>Werden innerhalb einer Stunde aus dem Speicher entfernt, nachdem das Foto, die Nachricht, die Unterhaltung oder das Konto, zu dem sie gehören, gelöscht wurde.</td></tr>
+<tr><td>In Unterhaltungen gesendete Fotos</td><td>Die Datei wird 90 Tage nach dem Senden gelöscht oder sobald die Zeit eines Fotos mit Timer abgelaufen ist, und die Nachricht bleibt und zeigt, dass das Foto abgelaufen ist oder geöffnet wurde. Ein nicht zugestelltes Foto wird sofort gelöscht, und eines, das hochgeladen, aber nie gesendet wurde, innerhalb eines Tages.</td></tr>
 <tr><td>Ein bei der Prüfung abgelehntes Foto</td><td>Wird sofort gelöscht. Seine Werte werden ohne das Bild aufbewahrt, solange dein Konto besteht.</td></tr>
 <tr><td>Sicherheitsaufzeichnungen: Meldungen, Moderationsmaßnahmen und Hinweise</td><td>Solange die beteiligten Konten bestehen, damit ein Muster über mehrere Meldungen hinweg erkennbar ist. Werden mit ihnen gelöscht.</td></tr>
 <tr><td>Beweise zu Meldungen</td><td>Solange die Meldung besteht, außer dass die Kopie der Unterhaltung eine Woche nach der Abweisung der Meldung gelöscht wird. Das Protokoll, wer sie geöffnet hat, bleibt mit der Meldung erhalten.</td></tr>
 <tr><td>Sperr-Fingerabdruck</td><td>Bis die Sperre aufgehoben wird.</td></tr>
 <tr><td>Push-Tokens</td><td>Bis du dich auf diesem Gerät abmeldest oder dein Konto gelöscht wird.</td></tr>
 <tr><td>Benachrichtigungsaufzeichnungen: welche Benachrichtigungen an wen gesendet wurden, und der Anzeigename des Absenders</td><td>Solange die beteiligten Konten bestehen.</td></tr>
+<tr><td>Einladungsdaten</td><td>Solange die beteiligten Konten bestehen.</td></tr>
 <tr><td>Serverprotokolle</td><td>Werden von Supabase höchstens 7 Tage aufbewahrt.</td></tr>
 <tr><td>Deine E-Mails an uns</td><td>So lange, wie wir brauchen, um dein Anliegen zu bearbeiten, und höchstens zwei Jahre.</td></tr>
 </tbody>
@@ -246,33 +209,6 @@
 <h2>15. Kontakt</h2>
 <p><strong>Bros Dolz LLC</strong><br>418 Broadway STE N<br>Albany, NY 12207<br>USA<br><a href="mailto:support@yaproll.app">support@yaproll.app</a></p>
 <p>Diese Erklärung gibt es auf Englisch, Spanisch, Portugiesisch, Französisch und Deutsch. Wenn eine Übersetzung und die englische Fassung voneinander abweichen, gilt die englische Fassung, soweit das Gesetz es zulässt.</p>
-</article>
-</div>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <a class="lockup" href="index.html"><span class="mark" aria-hidden="true"></span>YapRoll</a>
-    <nav aria-label="Rechtliches">
-      <a href="terms.html">Nutzungsbedingungen</a>
-      <a href="community-guidelines.html">Gemeinschaftsrichtlinien</a>
-      <a href="privacy.html">Datenschutzerklärung</a>
-      <a href="child-safety.html">Kinderschutz</a>
-      <a href="delete-account.html">Dein Konto löschen</a>
-      <a href="mailto:support@yaproll.app">Kontakt</a>
-    </nav>
-    <details class="lang-menu lang-menu-up">
-      <summary title="Sprache"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt=""><span class="sr-only">Sprache: Deutsch</span></summary>
-      <nav class="lang-list" aria-label="Sprache">
-        <a href="../privacy.html" hreflang="en" lang="en"><img class="flag" src="../assets/flags/gb.svg" width="21" height="14" alt="">English</a>
-        <a href="../es/privacy.html" hreflang="es" lang="es"><img class="flag" src="../assets/flags/es.svg" width="21" height="14" alt="">Español</a>
-        <a href="../pt/privacy.html" hreflang="pt" lang="pt"><img class="flag" src="../assets/flags/pt.svg" width="21" height="14" alt="">Português</a>
-        <a href="../fr/privacy.html" hreflang="fr" lang="fr"><img class="flag" src="../assets/flags/fr.svg" width="21" height="14" alt="">Français</a>
-        <a href="privacy.html" hreflang="de" lang="de" aria-current="true"><img class="flag" src="../assets/flags/de.svg" width="21" height="14" alt="">Deutsch</a>
-      </nav>
-    </details>
-    <p class="legal-line">&copy; 2026 Bros Dolz LLC. YapRoll ist für Erwachsene ab 18 Jahren. Google Play und das Google Play-Logo sind Marken der Google LLC. App Store ist eine Dienstleistungsmarke der Apple Inc.</p>
-  </div>
-</footer>
 </body>
 </html>
