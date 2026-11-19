@@ -90,15 +90,15 @@
 </div>
 <article class="prose">
 <h1>Privacy Policy</h1>
-<p class="meta">YapRoll · Effective 15 November 2026</p>
+<p class="meta">YapRoll · Effective 19 November 2026</p>
 
 <div class="callout">
-<p><strong>What changed in this version.</strong> This version covers what the app added in November 2026. YapRoll Plus and invites keep a few records of their own, listed in section 2. Photos you send in a conversation are checked before the other person sees them (section 4) and deleted after 90 days at most (section 9).</p>
+<p><strong>What changed in this version.</strong> Messages that may say the writer is under 18, and conversations reported with the reason Underage, are now read by an AI model from Anthropic. An account it finds to belong to somebody under 18 is suspended until they turn 18. Section 4 explains how the check works, and section 12 what happens after it.</p>
 </div>
 
 <p>YapRoll is a chat app for adults. You tap Search, you are paired with somebody else who is online and matches your preferences, and that pairing becomes a conversation. This policy explains what YapRoll collects to make that work, why, who else handles it, how long it is kept, and what you can do about it.</p>
 
-<p><strong>In short,</strong> we collect what we need to pair you with people and to keep your conversations working and safe, and we do not sell your data. Your messages are seen by the person you are talking to, and by a moderator only if somebody reports the conversation. You can delete everything at any time.</p>
+<p><strong>In short,</strong> we collect what we need to pair you with people and to keep your conversations working and safe, and we do not sell your data. Your messages are seen by the person you are talking to. A moderator sees them only if somebody reports the conversation, or if the automated age check needs a person to look (section 4). You can delete everything at any time.</p>
 
 <h2>1. Who we are</h2>
 <p>YapRoll is run by <strong>Bros Dolz LLC</strong>, 418 Broadway STE N, Albany, NY 12207, United States (“we”, “us”). We are the controller of your personal data: we decide what is collected and why. Contact us about anything in this policy at <a href="mailto:support@yaproll.app">support@yaproll.app</a>.</p>
@@ -122,6 +122,7 @@
 <tr><td><strong>Safety records</strong></td><td>The people you block; the reports you file (the reason and any note you add) and any report filed about you; the moderation actions taken on your account and the notices sent to you.</td><td>To keep blocked people apart, to act on reports, and to tell you when action is taken on your account.</td></tr>
 <tr><td><strong>Report evidence</strong></td><td>When a conversation is reported, a copy of its last 20 text messages and GIFs, frozen at that moment, and a record of every time a moderator opens that copy.</td><td>So a moderator can see what was reported even if the messages are later deleted. Voice notes and photos are not copied. The record of who opened it keeps moderators accountable.</td></tr>
 <tr><td><strong>Ban fingerprint</strong></td><td>If your account is banned: a one-way cryptographic fingerprint of your sign-in account ID. It cannot be turned back into your email address or ID.</td><td>So a banned person cannot get around the ban by deleting the account and signing up again.</td></tr>
+<tr><td><strong>Age checks</strong></td><td>If a message you send may say you are under 18, or a conversation of yours is reported with the reason Underage: a copy of that message and of up to 15 text messages before it in the conversation, what the automated check answered, and what was done about it. If an age check suspends your account, also a one-way fingerprint of your sign-in account ID with the date the suspension ends.</td><td>To keep people under 18 off YapRoll (see section 4). The fingerprint means that deleting the account and signing up again does not end the suspension early.</td></tr>
 <tr><td><strong>Photo review</strong></td><td>For each profile photo and each photo you send in a conversation, the scores the automated check returned, and the moderator's decision if a person reviewed it.</td><td>To decide whether a photo can be shown or delivered (see section 4).</td></tr>
 <tr><td><strong>Subscription</strong></td><td>If you buy No Ads or YapRoll Plus, or start a free trial: the purchase token, the plan, its status and expiry date, whether it renews, and the purchase record Google Play or Apple returns. With YapRoll Plus, also the choices you make in its settings, such as hiding when you are online.</td><td>To know you are subscribed on every device and after a reinstall, and to apply your choices. We never see your card or payment details.</td></tr>
 <tr><td><strong>Invites</strong></td><td>Your invite code; who joined with it; on which days a new account opened the app during its first 14 days; and the days of YapRoll Plus each invite earned.</td><td>To give both of you the reward once it is earned, and to keep invites from being abused.</td></tr>
@@ -145,7 +146,7 @@
 <tbody>
 <tr><td>Creating your account, pairing you, delivering your messages, photos and notifications, showing your profile, providing subscriptions and invite rewards</td><td>Providing the service you signed up for (contract)</td></tr>
 <tr><td>Using what your profile and preferences reveal about your sex life or orientation, to pair you</td><td>Your explicit consent, given when you tap “I agree” in the app; you withdraw it by deleting your account</td></tr>
-<tr><td>Checking photos, acting on reports, keeping safety records and the ban fingerprint, preventing spam and abuse, keeping the service secure</td><td>Our legitimate interest, and yours, in a service that is safe to use</td></tr>
+<tr><td>Checking photos, checking for users under 18, acting on reports, keeping safety records and the fingerprints, preventing spam and abuse, keeping the service secure</td><td>Our legitimate interest, and yours, in a service that is safe to use</td></tr>
 <tr><td>Personalised ads</td><td>Your consent, which you can withdraw at any time under Settings › Ad preferences</td></tr>
 <tr><td>Non-personalised ads on the free tier</td><td>Our legitimate interest in funding a free service</td></tr>
 <tr><td>Reporting child sexual abuse, answering valid legal requests, keeping records the law requires</td><td>Legal obligation</td></tr>
@@ -153,10 +154,12 @@
 </table>
 </div>
 
-<h2>4. Automated photo review</h2>
+<h2>4. Automated checks</h2>
 <p>Every profile photo you add is checked automatically before anybody else can see it. The photo is sent to OpenAI's moderation service, which returns scores for sexual, violent and self-harm content. Photos that score clearly low are shown and photos that score clearly high are removed. Anything in between waits for a moderator.</p>
 <p>A photo you send in a conversation goes through the same check before the other person sees it. One that clearly shows sexual content or graphic violence is not delivered, and it counts against your account. One that shows self-harm is not delivered either, but it does not count, and the app points you to where to find help. Anything else is delivered. Moderators do not see the photos you send in a conversation, even when the conversation is reported.</p>
 <p>Each photo the check removes counts against your account, except one sent in a conversation that showed self-harm. Enough of them lead automatically to a warning and then to suspensions, and photos refused in a conversation can end in a ban, as set out in the <a href="community-guidelines.html#enforcement">Community Guidelines</a>. Because these decisions can be made without a person, <strong>you always have the right to have a person review them</strong>: appeal as described in section 5 of the <a href="terms.html">Terms of Service</a>.</p>
+<p>Some text messages are checked for a sign that the person writing them is under 18. A filter on our server reads the text messages of the accounts most likely to belong to minors, and of accounts reported as Underage, and stops at the few that may give an age under 18 or say the writer is a minor or still at school. That message and up to 15 text messages before it in the conversation are then sent to Claude, an AI model made by Anthropic, which answers whether the writer said they are under 18. When somebody reports a conversation with the reason Underage, the reported person's own messages in it are checked the same way, and the report on its own is never enough. Only text is sent, without your name or anything else from your profile.</p>
+<p>If the check finds that you said you are under 18, or cannot rule it out, your account is suspended until the day you turn 18. The date comes from the birthday on your profile and the age you gave. If you gave no age, we count as if you were 13. Your conversations are removed for both people at once, and signing up again with the same Google or Apple account does not end the suspension. If you are in fact 18 or over, appeal with proof of your age as described in section 5 of the <a href="terms.html">Terms of Service</a>, and a person will look at it.</p>
 <p>No other decision about you is made automatically. Pairing chooses among the people who match both sets of preferences, without any profiling.</p>
 
 <h2>5. Ads</h2>
@@ -173,6 +176,7 @@
 <tr><td><strong>Google</strong></td><td>Google Sign-In (your account), Firebase Cloud Messaging (notifications), Google Play Billing (subscriptions on Android) and Google AdMob (ads on the free tier).</td></tr>
 <tr><td><strong>Apple</strong></td><td>On iPhone: Sign in with Apple, App Store purchases, and the Apple Push Notification service that delivers notifications.</td></tr>
 <tr><td><strong>OpenAI</strong></td><td>Checks each profile photo and each photo sent in a conversation (section 4). OpenAI does not use the photo to train its models, and says its moderation service does not keep it once the check is done.</td></tr>
+<tr><td><strong>Anthropic</strong></td><td>Its AI model, Claude, checks the messages that may say the writer is under 18, and conversations reported as Underage (section 4). Anthropic does not use them to train its models and deletes them within 30 days, unless its own safety systems flag them, in which case it may keep them for up to 2 years.</td></tr>
 <tr><td><strong>KLIPY</strong></td><td>Provides the GIFs. Your GIF searches go to KLIPY through our server, never with your account; KLIPY sees only an anonymous code derived from it. The GIFs themselves, in the GIF panel and in conversations, load directly from KLIPY's servers, which see your device's IP address, as any website would.</td></tr>
 <tr><td><strong>GitHub</strong></td><td>Hosts the website, yaproll.app, and sees the IP address of anybody who visits it.</td></tr>
 <tr><td><strong>Cloudflare</strong></td><td>Delivers the website from GitHub to your browser, and sees the IP address of anybody who visits it.</td></tr>
@@ -188,7 +192,7 @@
 <ul>
 <li><strong>Your profile</strong>, meaning your display name, age, sex, what you are looking for, region, languages, approved photos and whether you are online, is visible only to the people you are paired with. With YapRoll Plus you can hide when you are online from them as well. Strangers cannot look you up, and there is no public profile.</li>
 <li><strong>Your messages</strong> are visible to the other person in the conversation. Messages are not end-to-end encrypted: they are stored on our servers so they can be delivered to the other person's devices, and so that a reported conversation can be reviewed. A photo you send is seen only by the other person. A timed photo can be opened while its timer runs and is then deleted for both of you. While it is open, the app blocks screenshots on Android, but nothing stops somebody photographing the screen with another phone.</li>
-<li><strong>Moderators</strong> can see reports, the evidence attached to them, profile photos waiting for review, and your account's moderation history. They cannot read your conversations otherwise, and every time they open report evidence, it is recorded. They never see the photos sent in a conversation.</li>
+<li><strong>Moderators</strong> can see reports, the evidence attached to them, the messages kept with an age check, profile photos waiting for review, and your account's moderation history. They cannot read your conversations otherwise, and every time they open report evidence, it is recorded. They never see the photos sent in a conversation.</li>
 <li>A person you block is not told that you blocked them.</li>
 <li><strong>If you delete your account</strong>, your photos and online status are hidden straight away. Until it is permanently deleted, the people you were talking to still see your display name and your conversation with them, read-only, with a note that you deleted your account.</li>
 </ul>
@@ -211,6 +215,7 @@
 <tr><td>Safety records: reports, moderation actions and notices</td><td>While the accounts involved exist, so that a pattern across several reports can be seen. Deleted with them.</td></tr>
 <tr><td>Report evidence</td><td>While the report exists, except that the copy of the conversation is deleted one week after the report is dismissed. The record of who opened it is kept with the report.</td></tr>
 <tr><td>Ban fingerprint</td><td>Until the ban is lifted.</td></tr>
+<tr><td>Age checks</td><td>The copy of the conversation is deleted once the check is decided; if the answer was unsure, it is kept 30 days so a moderator can look at it. A check that finds nothing is deleted 30 days after it is made. One that suspends an account is kept while the account exists, and the fingerprint until the suspension ends or is lifted.</td></tr>
 <tr><td>Push tokens</td><td>Until you sign out on that device, or your account is deleted.</td></tr>
 <tr><td>Notification records: which notifications were sent, to whom, and the sender's display name</td><td>While the accounts involved exist.</td></tr>
 <tr><td>Invite records</td><td>While the accounts involved exist.</td></tr>
@@ -239,7 +244,7 @@
 <p><strong>How to ask.</strong> Email <a href="mailto:support@yaproll.app">support@yaproll.app</a> from the email address of your YapRoll account, so we know the request is yours. You can also ask somebody to make a request on your behalf, if they can show they are authorised to. We answer within one month. If a request is complicated, we may take up to two more months, and we will tell you why within the first month. It is free.</p>
 
 <h2>12. Age</h2>
-<p>YapRoll is for adults only. An account cannot be created with a date of birth under 18, and an account we find to belong to somebody under 18 is deleted. We do not knowingly collect data from children. If you believe a child is using YapRoll, report the account in the app with the reason Underage, or email <a href="mailto:support@yaproll.app">support@yaproll.app</a>.</p>
+<p>YapRoll is for adults only. An account cannot be created with a date of birth under 18. An account we find to belong to somebody under 18, through the check in section 4 or a moderator, is suspended until they turn 18 and its conversations are removed. We do not knowingly collect data from children. If you believe a child is using YapRoll, report the account in the app with the reason Underage, or email <a href="mailto:support@yaproll.app">support@yaproll.app</a>.</p>
 
 <h2>13. The website</h2>
 <p>yaproll.app uses no cookies, no analytics and no advertising. If you use the theme switch, your choice is remembered in your own browser and is never sent to us. GitHub hosts the site and Cloudflare delivers it, so both see your IP address when you visit, as any web host does.</p>
